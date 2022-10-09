@@ -126,6 +126,11 @@ btn_P8_empty.listen("clicked", func {
 		print("P8: None");
 		setprop("sim/weight[7]/selected","None");
 		setprop("fdm/jsbsim/inertia/pointmass-weight-lbs[7]",0.0);
+		setprop("controls/armament/station[7]/jettison-all",0);
+		setprop("controls/armament/station[7]/release",0);
+		setprop("controls/armament/station[7]/release-all",0);
+		setprop("controls/armament/station[7]/release-stick",0);
+		setprop("controls/armament/station[7]/stick-size",0);
 		pylons_update();
 		});
 P8Ctls.addItem(btn_P8_empty);
@@ -141,6 +146,11 @@ btn_P8_R_73.listen("clicked", func {
 		print("P8: R-73");
 		setprop("sim/weight[7]/selected","R-73");
 		setprop("fdm/jsbsim/inertia/pointmass-weight-lbs[7]",231.48); # R-73 = 105KG
+		setprop("controls/armament/station[7]/jettison-all",0);
+		setprop("controls/armament/station[7]/release",0);
+		setprop("controls/armament/station[7]/release-all",0);
+		setprop("controls/armament/station[7]/release-stick",0);
+		setprop("controls/armament/station[7]/stick-size",0);
 		pylons_update();
 		});
 P8Ctls.addItem(btn_P8_R_73);
@@ -156,6 +166,11 @@ btn_P8_smk_red.listen("clicked", func {
 		print("P8: smoke-red");
 		setprop("sim/weight[7]/selected","smoke-red");
 		setprop("fdm/jsbsim/inertia/pointmass-weight-lbs[7]",33); # WEIGHT HERE IS A GUESS !
+		setprop("controls/armament/station[7]/jettison-all",0);
+		setprop("controls/armament/station[7]/release",0);
+		setprop("controls/armament/station[7]/release-all",0);
+		setprop("controls/armament/station[7]/release-stick",0);
+		setprop("controls/armament/station[7]/stick-size",0);
 		pylons_update();
 		});
 P8Ctls.addItem(btn_P8_smk_red);
@@ -171,6 +186,11 @@ btn_P8_smk_yellw.listen("clicked", func {
 		print("P8: smoke-yellow");
 		setprop("sim/weight[7]/selected","smoke-yellow");
 		setprop("fdm/jsbsim/inertia/pointmass-weight-lbs[7]",33); # WEIGHT HERE IS A GUESS !
+		setprop("controls/armament/station[7]/jettison-all",0);
+		setprop("controls/armament/station[7]/release",0);
+		setprop("controls/armament/station[7]/release-all",0);
+		setprop("controls/armament/station[7]/release-stick",0);
+		setprop("controls/armament/station[7]/stick-size",0);
 		pylons_update();
 		});
 P8Ctls.addItem(btn_P8_smk_yellw);
@@ -186,6 +206,11 @@ btn_P8_smk_blue.listen("clicked", func {
 		print("P8: smoke-blue");
 		setprop("sim/weight[7]/selected","smoke-blue");
 		setprop("fdm/jsbsim/inertia/pointmass-weight-lbs[7]",33); # WEIGHT HERE IS A GUESS !
+		setprop("controls/armament/station[7]/jettison-all",0);
+		setprop("controls/armament/station[7]/release",0);
+		setprop("controls/armament/station[7]/release-all",0);
+		setprop("controls/armament/station[7]/release-stick",0);
+		setprop("controls/armament/station[7]/stick-size",0);
 		pylons_update();
 		});
 P8Ctls.addItem(btn_P8_smk_blue);
@@ -204,6 +229,11 @@ btn_P6_empty.listen("clicked", func {
 		print("P6: None");
 		setprop("sim/weight[5]/selected","None");
 		setprop("fdm/jsbsim/inertia/pointmass-weight-lbs[5]",0.0);
+		setprop("controls/armament/station[5]/jettison-all",0);
+		setprop("controls/armament/station[5]/release",0);
+		setprop("controls/armament/station[5]/release-all",0);
+		setprop("controls/armament/station[5]/release-stick",0);
+		setprop("controls/armament/station[5]/stick-size",0);
 		pylons_update();
 		});
 P6Ctls.addItem(btn_P6_empty);
@@ -219,6 +249,11 @@ btn_P6_R27R.listen("clicked", func {
 		print("P6: R-27R");
 		setprop("sim/weight[5]/selected","R-27R");
 		setprop("fdm/jsbsim/inertia/pointmass-weight-lbs[5]",557.769); # R-27R = 253 KG
+		setprop("controls/armament/station[5]/jettison-all",0);
+		setprop("controls/armament/station[5]/release",0);
+		setprop("controls/armament/station[5]/release-all",0);
+		setprop("controls/armament/station[5]/release-stick",0);
+		setprop("controls/armament/station[5]/stick-size",0);
 		pylons_update();
 		});
 P6Ctls.addItem(btn_P6_R27R);
@@ -234,6 +269,11 @@ btn_P6_R27T.listen("clicked", func {
 		print("P6: R-27T");
 		setprop("sim/weight[5]/selected","R-27T");
 		setprop("fdm/jsbsim/inertia/pointmass-weight-lbs[5]",559.974); # R-27T = 254 KG
+		setprop("controls/armament/station[5]/jettison-all",0);
+		setprop("controls/armament/station[5]/release",0);
+		setprop("controls/armament/station[5]/release-all",0);
+		setprop("controls/armament/station[5]/release-stick",0);
+		setprop("controls/armament/station[5]/stick-size",0);
 		pylons_update();
 		});
 P6Ctls.addItem(btn_P6_R27T);
@@ -249,6 +289,11 @@ btn_P6_R27ER.listen("clicked", func {
 		print("P6: R-27ER");
 		setprop("sim/weight[5]/selected","R-27ER");
 		setprop("fdm/jsbsim/inertia/pointmass-weight-lbs[5]",771.617); # R-27ER = 350 KG
+		setprop("controls/armament/station[5]/jettison-all",0);
+		setprop("controls/armament/station[5]/release",0);
+		setprop("controls/armament/station[5]/release-all",0);
+		setprop("controls/armament/station[5]/release-stick",0);
+		setprop("controls/armament/station[5]/stick-size",0);
 		pylons_update();
 		});
 P6Ctls.addItem(btn_P6_R27ER);
@@ -264,6 +309,11 @@ btn_P6_R27ET.listen("clicked", func {
 		print("P6: R-27ET");
 		setprop("sim/weight[5]/selected","R-27ET");
 		setprop("fdm/jsbsim/inertia/pointmass-weight-lbs[5]",756.185); # R-27ET = 343  KG
+		setprop("controls/armament/station[5]/jettison-all",0);
+		setprop("controls/armament/station[5]/release",0);
+		setprop("controls/armament/station[5]/release-all",0);
+		setprop("controls/armament/station[5]/release-stick",0);
+		setprop("controls/armament/station[5]/stick-size",0);
 		pylons_update();
 		});
 P6Ctls.addItem(btn_P6_R27ET);
@@ -283,6 +333,11 @@ btn_P4_empty.listen("clicked", func {
 		print("P4: None");
 		setprop("sim/weight[3]/selected","None");
 		setprop("fdm/jsbsim/inertia/pointmass-weight-lbs[3]",0.0);
+		setprop("controls/armament/station[3]/jettison-all",0);
+		setprop("controls/armament/station[3]/release",0);
+		setprop("controls/armament/station[3]/release-all",0);
+		setprop("controls/armament/station[3]/release-stick",0);
+		setprop("controls/armament/station[3]/stick-size",0);
 		pylons_update();
 		});
 P4Ctls.addItem(btn_P4_empty);
@@ -298,6 +353,11 @@ btn_P4_R27R.listen("clicked", func {
 		print("P4: R-27R");
 		setprop("sim/weight[3]/selected","R-27R");
 		setprop("fdm/jsbsim/inertia/pointmass-weight-lbs[3]",557.769); # R-27R = 253 KG
+		setprop("controls/armament/station[3]/jettison-all",0);
+		setprop("controls/armament/station[3]/release",0);
+		setprop("controls/armament/station[3]/release-all",0);
+		setprop("controls/armament/station[3]/release-stick",0);
+		setprop("controls/armament/station[3]/stick-size",0);
 		pylons_update();
 		});
 P4Ctls.addItem(btn_P4_R27R);
@@ -313,6 +373,11 @@ btn_P4_R27T.listen("clicked", func {
 		print("P4: R-27T");
 		setprop("sim/weight[3]/selected","R-27T");
 		setprop("fdm/jsbsim/inertia/pointmass-weight-lbs[3]",559.974); # R-27T = 254 KG
+		setprop("controls/armament/station[3]/jettison-all",0);
+		setprop("controls/armament/station[3]/release",0);
+		setprop("controls/armament/station[3]/release-all",0);
+		setprop("controls/armament/station[3]/release-stick",0);
+		setprop("controls/armament/station[3]/stick-size",0);
 		pylons_update();
 		});
 P4Ctls.addItem(btn_P4_R27T);
@@ -328,6 +393,11 @@ btn_P4_R27ER.listen("clicked", func {
 		print("P4: R-27ER");
 		setprop("sim/weight[3]/selected","R-27ER");
 		setprop("fdm/jsbsim/inertia/pointmass-weight-lbs[3]",771.617); # R-27ER = 350 KG
+		setprop("controls/armament/station[3]/jettison-all",0);
+		setprop("controls/armament/station[3]/release",0);
+		setprop("controls/armament/station[3]/release-all",0);
+		setprop("controls/armament/station[3]/release-stick",0);
+		setprop("controls/armament/station[3]/stick-size",0);
 		pylons_update();
 		});
 P4Ctls.addItem(btn_P4_R27ER);
@@ -343,6 +413,11 @@ btn_P4_R27ET.listen("clicked", func {
 		print("P4: R-27ET");
 		setprop("sim/weight[3]/selected","R-27ET");
 		setprop("fdm/jsbsim/inertia/pointmass-weight-lbs[3]",756.185); # R-27ET = 343  KG
+		setprop("controls/armament/station[3]/jettison-all",0);
+		setprop("controls/armament/station[3]/release",0);
+		setprop("controls/armament/station[3]/release-all",0);
+		setprop("controls/armament/station[3]/release-stick",0);
+		setprop("controls/armament/station[3]/stick-size",0);
 		pylons_update();
 		});
 P4Ctls.addItem(btn_P4_R27ET);
@@ -362,6 +437,11 @@ btn_P10_empty.listen("clicked", func {
 		print("P10: None");
 		setprop("sim/weight[9]/selected","None");
 		setprop("fdm/jsbsim/inertia/pointmass-weight-lbs[9]",0.0);
+		setprop("controls/armament/station[9]/jettison-all",0);
+		setprop("controls/armament/station[9]/release",0);
+		setprop("controls/armament/station[9]/release-all",0);
+		setprop("controls/armament/station[9]/release-stick",0);
+		setprop("controls/armament/station[9]/stick-size",0);
 		pylons_update();
 		});
 P10Ctls.addItem(btn_P10_empty);
@@ -377,6 +457,11 @@ btn_P10_R27R.listen("clicked", func {
 		print("P10: R-27R");
 		setprop("sim/weight[9]/selected","R-27R");
 		setprop("fdm/jsbsim/inertia/pointmass-weight-lbs[9]",557.769); # R-27R = 253 KG
+		setprop("controls/armament/station[9]/jettison-all",0);
+		setprop("controls/armament/station[9]/release",0);
+		setprop("controls/armament/station[9]/release-all",0);
+		setprop("controls/armament/station[9]/release-stick",0);
+		setprop("controls/armament/station[9]/stick-size",0);
 		pylons_update();
 		});
 P10Ctls.addItem(btn_P10_R27R);
@@ -407,6 +492,11 @@ btn_P10_R27ER.listen("clicked", func {
 		print("P10: R-27ER");
 		setprop("sim/weight[9]/selected","R-27ER");
 		setprop("fdm/jsbsim/inertia/pointmass-weight-lbs[9]",771.617); # R-27ER = 350 KG
+		setprop("controls/armament/station[9]/jettison-all",0);
+		setprop("controls/armament/station[9]/release",0);
+		setprop("controls/armament/station[9]/release-all",0);
+		setprop("controls/armament/station[9]/release-stick",0);
+		setprop("controls/armament/station[9]/stick-size",0);
 		pylons_update();
 		});
 P10Ctls.addItem(btn_P10_R27ER);
@@ -422,6 +512,11 @@ btn_P10_R27ET.listen("clicked", func {
 		print("P10: R-27ET");
 		setprop("sim/weight[9]/selected","R-27ET");
 		setprop("fdm/jsbsim/inertia/pointmass-weight-lbs[9]",756.185); # R-27ET = 343  KG
+		setprop("controls/armament/station[9]/jettison-all",0);
+		setprop("controls/armament/station[9]/release",0);
+		setprop("controls/armament/station[9]/release-all",0);
+		setprop("controls/armament/station[9]/release-stick",0);
+		setprop("controls/armament/station[9]/stick-size",0);
 		pylons_update();
 		});
 P10Ctls.addItem(btn_P10_R27ET);
@@ -441,6 +536,11 @@ btn_P2_empty.listen("clicked", func {
 		print("P2: None");
 		setprop("sim/weight[1]/selected","None");
 		setprop("fdm/jsbsim/inertia/pointmass-weight-lbs[1]",0.0);
+		setprop("controls/armament/station[1]/jettison-all",0);
+		setprop("controls/armament/station[1]/release",0);
+		setprop("controls/armament/station[1]/release-all",0);
+		setprop("controls/armament/station[1]/release-stick",0);
+		setprop("controls/armament/station[1]/stick-size",0);
 		pylons_update();
 		});
 P2Ctls.addItem(btn_P2_empty);
@@ -456,6 +556,11 @@ btn_P2_R27R.listen("clicked", func {
 		print("P2: R-27R");
 		setprop("sim/weight[1]/selected","R-27R");
 		setprop("fdm/jsbsim/inertia/pointmass-weight-lbs[1]",557.769); # R-27R = 253 KG
+		setprop("controls/armament/station[1]/jettison-all",0);
+		setprop("controls/armament/station[1]/release",0);
+		setprop("controls/armament/station[1]/release-all",0);
+		setprop("controls/armament/station[1]/release-stick",0);
+		setprop("controls/armament/station[1]/stick-size",0);
 		pylons_update();
 		});
 P2Ctls.addItem(btn_P2_R27R);
@@ -471,6 +576,11 @@ btn_P2_R27T.listen("clicked", func {
 		print("P2: R-27T");
 		setprop("sim/weight[1]/selected","R-27T");
 		setprop("fdm/jsbsim/inertia/pointmass-weight-lbs[1]",559.974); # R-27T = 254 KG
+		setprop("controls/armament/station[1]/jettison-all",0);
+		setprop("controls/armament/station[1]/release",0);
+		setprop("controls/armament/station[1]/release-all",0);
+		setprop("controls/armament/station[1]/release-stick",0);
+		setprop("controls/armament/station[1]/stick-size",0);
 		pylons_update();
 		});
 P2Ctls.addItem(btn_P2_R27T);
@@ -486,6 +596,11 @@ btn_P2_R27ER.listen("clicked", func {
 		print("P2: R-27ER");
 		setprop("sim/weight[1]/selected","R-27ER");
 		setprop("fdm/jsbsim/inertia/pointmass-weight-lbs[1]",771.617); # R-27ER = 350 KG
+		setprop("controls/armament/station[1]/jettison-all",0);
+		setprop("controls/armament/station[1]/release",0);
+		setprop("controls/armament/station[1]/release-all",0);
+		setprop("controls/armament/station[1]/release-stick",0);
+		setprop("controls/armament/station[1]/stick-size",0);
 		pylons_update();
 		});
 P2Ctls.addItem(btn_P2_R27ER);
@@ -501,6 +616,11 @@ btn_P2_R27ET.listen("clicked", func {
 		print("P2: R-27ET");
 		setprop("sim/weight[1]/selected","R-27ET");
 		setprop("fdm/jsbsim/inertia/pointmass-weight-lbs[1]",756.185); # R-27ET = 343  KG
+		setprop("controls/armament/station[1]/jettison-all",0);
+		setprop("controls/armament/station[1]/release",0);
+		setprop("controls/armament/station[1]/release-all",0);
+		setprop("controls/armament/station[1]/release-stick",0);
+		setprop("controls/armament/station[1]/stick-size",0);
 		pylons_update();
 		});
 P2Ctls.addItem(btn_P2_R27ET);
@@ -520,6 +640,11 @@ btn_P1_empty.listen("clicked", func {
 		print("P1: None");
 		setprop("sim/weight/selected","None");
 		setprop("fdm/jsbsim/inertia/pointmass-weight-lbs",0.0);
+		setprop("controls/armament/station[0]/jettison-all",0);
+		setprop("controls/armament/station[0]/release",0);
+		setprop("controls/armament/station[0]/release-all",0);
+		setprop("controls/armament/station[0]/release-stick",0);
+		setprop("controls/armament/station[0]/stick-size",0);
 		pylons_update();
 		});
 P1Ctls.addItem(btn_P1_empty);
@@ -535,6 +660,11 @@ btn_P1_R27R.listen("clicked", func {
 		print("P1: R-27R");
 		setprop("sim/weight/selected","R-27R");
 		setprop("fdm/jsbsim/inertia/pointmass-weight-lbs",557.769); # R-27R = 253 KG
+		setprop("controls/armament/station[0]/jettison-all",0);
+		setprop("controls/armament/station[0]/release",0);
+		setprop("controls/armament/station[0]/release-all",0);
+		setprop("controls/armament/station[0]/release-stick",0);
+		setprop("controls/armament/station[0]/stick-size",0);
 		pylons_update();
 		});
 P1Ctls.addItem(btn_P1_R27R);
@@ -550,6 +680,11 @@ btn_P1_R27T.listen("clicked", func {
 		print("P1: R-27T");
 		setprop("sim/weight/selected","R-27T");
 		setprop("fdm/jsbsim/inertia/pointmass-weight-lbs",559.974); # R-27T = 254 KG
+		setprop("controls/armament/station[0]/jettison-all",0);
+		setprop("controls/armament/station[0]/release",0);
+		setprop("controls/armament/station[0]/release-all",0);
+		setprop("controls/armament/station[0]/release-stick",0);
+		setprop("controls/armament/station[0]/stick-size",0);
 		pylons_update();
 		});
 P1Ctls.addItem(btn_P1_R27T);
@@ -565,6 +700,11 @@ btn_P1_R27ER.listen("clicked", func {
 		print("P1: R-27ER");
 		setprop("sim/weight/selected","R-27ER");
 		setprop("fdm/jsbsim/inertia/pointmass-weight-lbs",771.617); # R-27ER = 350 KG
+		setprop("controls/armament/station[0]/jettison-all",0);
+		setprop("controls/armament/station[0]/release",0);
+		setprop("controls/armament/station[0]/release-all",0);
+		setprop("controls/armament/station[0]/release-stick",0);
+		setprop("controls/armament/station[0]/stick-size",0);
 		pylons_update();
 		});
 P1Ctls.addItem(btn_P1_R27ER);
@@ -580,6 +720,11 @@ btn_P1_R27ET.listen("clicked", func {
 		print("P1: R-27ET");
 		setprop("sim/weight/selected","R-27ET");
 		setprop("fdm/jsbsim/inertia/pointmass-weight-lbs",756.185); # R-27ET = 343  KG
+		setprop("controls/armament/station[0]/jettison-all",0);
+		setprop("controls/armament/station[0]/release",0);
+		setprop("controls/armament/station[0]/release-all",0);
+		setprop("controls/armament/station[0]/release-stick",0);
+		setprop("controls/armament/station[0]/stick-size",0);
 		pylons_update();
 		});
 P1Ctls.addItem(btn_P1_R27ET);
@@ -599,6 +744,11 @@ btn_P9_empty.listen("clicked", func {
 		print("P9: None");
 		setprop("sim/weight[8]/selected","None");
 		setprop("fdm/jsbsim/inertia/pointmass-weight-lbs[8]",0.0);
+		setprop("controls/armament/station[8]/jettison-all",0);
+		setprop("controls/armament/station[8]/release",0);
+		setprop("controls/armament/station[8]/release-all",0);
+		setprop("controls/armament/station[8]/release-stick",0);
+		setprop("controls/armament/station[8]/stick-size",0);
 		pylons_update();
 		});
 P9Ctls.addItem(btn_P9_empty);
@@ -614,6 +764,11 @@ btn_P9_R27R.listen("clicked", func {
 		print("P9: R-27R");
 		setprop("sim/weight[8]/selected","R-27R");
 		setprop("fdm/jsbsim/inertia/pointmass-weight-lbs[8]",557.769); # R-27R = 253 KG
+		setprop("controls/armament/station[8]/jettison-all",0);
+		setprop("controls/armament/station[8]/release",0);
+		setprop("controls/armament/station[8]/release-all",0);
+		setprop("controls/armament/station[8]/release-stick",0);
+		setprop("controls/armament/station[8]/stick-size",0);
 		pylons_update();
 		});
 P9Ctls.addItem(btn_P9_R27R);
@@ -629,6 +784,11 @@ btn_P9_R27T.listen("clicked", func {
 		print("P9: R-27T");
 		setprop("sim/weight[8]/selected","R-27T");
 		setprop("fdm/jsbsim/inertia/pointmass-weight-lbs[8]",559.974); # R-27T = 254 KG
+		setprop("controls/armament/station[8]/jettison-all",0);
+		setprop("controls/armament/station[8]/release",0);
+		setprop("controls/armament/station[8]/release-all",0);
+		setprop("controls/armament/station[8]/release-stick",0);
+		setprop("controls/armament/station[8]/stick-size",0);
 		pylons_update();
 		});
 P9Ctls.addItem(btn_P9_R27T);
@@ -644,6 +804,11 @@ btn_P9_R27ER.listen("clicked", func {
 		print("P9: R-27ER");
 		setprop("sim/weight[8]/selected","R-27ER");
 		setprop("fdm/jsbsim/inertia/pointmass-weight-lbs[8]",771.617); # R-27ER = 350 KG
+		setprop("controls/armament/station[8]/jettison-all",0);
+		setprop("controls/armament/station[8]/release",0);
+		setprop("controls/armament/station[8]/release-all",0);
+		setprop("controls/armament/station[8]/release-stick",0);
+		setprop("controls/armament/station[8]/stick-size",0);
 		pylons_update();
 		});
 P9Ctls.addItem(btn_P9_R27ER);
@@ -659,6 +824,11 @@ btn_P9_R27ET.listen("clicked", func {
 		print("P9: R-27ET");
 		setprop("sim/weight[8]/selected","R-27ET");
 		setprop("fdm/jsbsim/inertia/pointmass-weight-lbs[8]",756.185); # R-27ET = 343  KG
+		setprop("controls/armament/station[8]/jettison-all",0);
+		setprop("controls/armament/station[8]/release",0);
+		setprop("controls/armament/station[8]/release-all",0);
+		setprop("controls/armament/station[8]/release-stick",0);
+		setprop("controls/armament/station[8]/stick-size",0);
 		pylons_update();
 		});
 P9Ctls.addItem(btn_P9_R27ET);
@@ -678,6 +848,11 @@ btn_P3_empty.listen("clicked", func {
 		print("P3: None");
 		setprop("sim/weight[2]/selected","None");
 		setprop("fdm/jsbsim/inertia/pointmass-weight-lbs[2]",0.0);
+		setprop("controls/armament/station[2]/jettison-all",0);
+		setprop("controls/armament/station[2]/release",0);
+		setprop("controls/armament/station[2]/release-all",0);
+		setprop("controls/armament/station[2]/release-stick",0);
+		setprop("controls/armament/station[2]/stick-size",0);
 		pylons_update();
 		});
 P3Ctls.addItem(btn_P3_empty);
@@ -693,6 +868,11 @@ btn_P3_R27R.listen("clicked", func {
 		print("P3: R-27R");
 		setprop("sim/weight[2]/selected","R-27R");
 		setprop("fdm/jsbsim/inertia/pointmass-weight-lbs[2]",557.769); # R-27R = 253 KG
+		setprop("controls/armament/station[2]/jettison-all",0);
+		setprop("controls/armament/station[2]/release",0);
+		setprop("controls/armament/station[2]/release-all",0);
+		setprop("controls/armament/station[2]/release-stick",0);
+		setprop("controls/armament/station[2]/stick-size",0);
 		pylons_update();
 		});
 P3Ctls.addItem(btn_P3_R27R);
@@ -708,6 +888,11 @@ btn_P3_R27T.listen("clicked", func {
 		print("P3: R-27T");
 		setprop("sim/weight[2]/selected","R-27T");
 		setprop("fdm/jsbsim/inertia/pointmass-weight-lbs[2]",559.974); # R-27T = 254 KG
+		setprop("controls/armament/station[2]/jettison-all",0);
+		setprop("controls/armament/station[2]/release",0);
+		setprop("controls/armament/station[2]/release-all",0);
+		setprop("controls/armament/station[2]/release-stick",0);
+		setprop("controls/armament/station[2]/stick-size",0);
 		pylons_update();
 		});
 P3Ctls.addItem(btn_P3_R27T);
@@ -723,6 +908,11 @@ btn_P3_R27ER.listen("clicked", func {
 		print("P3: R-27ER");
 		setprop("sim/weight[2]/selected","R-27ER");
 		setprop("fdm/jsbsim/inertia/pointmass-weight-lbs[2]",771.617); # R-27ER = 350 KG
+		setprop("controls/armament/station[2]/jettison-all",0);
+		setprop("controls/armament/station[2]/release",0);
+		setprop("controls/armament/station[2]/release-all",0);
+		setprop("controls/armament/station[2]/release-stick",0);
+		setprop("controls/armament/station[2]/stick-size",0);
 		pylons_update();
 		});
 P3Ctls.addItem(btn_P3_R27ER);
@@ -738,6 +928,11 @@ btn_P3_R27ET.listen("clicked", func {
 		print("P3: R-27ET");
 		setprop("sim/weight[2]/selected","R-27ET");
 		setprop("fdm/jsbsim/inertia/pointmass-weight-lbs[2]",756.185); # R-27ET = 343  KG
+		setprop("controls/armament/station[2]/jettison-all",0);
+		setprop("controls/armament/station[2]/release",0);
+		setprop("controls/armament/station[2]/release-all",0);
+		setprop("controls/armament/station[2]/release-stick",0);
+		setprop("controls/armament/station[2]/stick-size",0);
 		pylons_update();
 		});
 P3Ctls.addItem(btn_P3_R27ET);
@@ -757,6 +952,11 @@ btn_P5_empty.listen("clicked", func {
 		print("P5: None");
 		setprop("sim/weight[4]/selected","None");
 		setprop("fdm/jsbsim/inertia/pointmass-weight-lbs[4]",0.0);
+		setprop("controls/armament/station[4]/jettison-all",0);
+		setprop("controls/armament/station[4]/release",0);
+		setprop("controls/armament/station[4]/release-all",0);
+		setprop("controls/armament/station[4]/release-stick",0);
+		setprop("controls/armament/station[4]/stick-size",0);
 		pylons_update();
 		});
 P5Ctls.addItem(btn_P5_empty);
@@ -772,6 +972,11 @@ btn_P5_R27R.listen("clicked", func {
 		print("P5: R-27R");
 		setprop("sim/weight[4]/selected","R-27R");
 		setprop("fdm/jsbsim/inertia/pointmass-weight-lbs[4]",557.769); # R-27R = 253 KG
+		setprop("controls/armament/station[4]/jettison-all",0);
+		setprop("controls/armament/station[4]/release",0);
+		setprop("controls/armament/station[4]/release-all",0);
+		setprop("controls/armament/station[4]/release-stick",0);
+		setprop("controls/armament/station[4]/stick-size",0);
 		pylons_update();
 		});
 P5Ctls.addItem(btn_P5_R27R);
@@ -787,6 +992,11 @@ btn_P5_R27T.listen("clicked", func {
 		print("P5: R-27T");
 		setprop("sim/weight[4]/selected","R-27T");
 		setprop("fdm/jsbsim/inertia/pointmass-weight-lbs[4]",559.974); # R-27T = 254 KG
+		setprop("controls/armament/station[4]/jettison-all",0);
+		setprop("controls/armament/station[4]/release",0);
+		setprop("controls/armament/station[4]/release-all",0);
+		setprop("controls/armament/station[4]/release-stick",0);
+		setprop("controls/armament/station[4]/stick-size",0);
 		pylons_update();
 		});
 P5Ctls.addItem(btn_P5_R27T);
@@ -802,6 +1012,11 @@ btn_P5_R27ER.listen("clicked", func {
 		print("P5: R-27ER");
 		setprop("sim/weight[4]/selected","R-27ER");
 		setprop("fdm/jsbsim/inertia/pointmass-weight-lbs[4]",771.617); # R-27ER = 350 KG
+		setprop("controls/armament/station[4]/jettison-all",0);
+		setprop("controls/armament/station[4]/release",0);
+		setprop("controls/armament/station[4]/release-all",0);
+		setprop("controls/armament/station[4]/release-stick",0);
+		setprop("controls/armament/station[4]/stick-size",0);
 		pylons_update();
 		});
 P5Ctls.addItem(btn_P5_R27ER);
@@ -817,6 +1032,11 @@ btn_P5_R27ET.listen("clicked", func {
 		print("P5: R-27ET");
 		setprop("sim/weight[4]/selected","R-27ET");
 		setprop("fdm/jsbsim/inertia/pointmass-weight-lbs[4]",756.185); # R-27ET = 343  KG
+		setprop("controls/armament/station[4]/jettison-all",0);
+		setprop("controls/armament/station[4]/release",0);
+		setprop("controls/armament/station[4]/release-all",0);
+		setprop("controls/armament/station[4]/release-stick",0);
+		setprop("controls/armament/station[4]/stick-size",0);
 		pylons_update();
 		});
 P5Ctls.addItem(btn_P5_R27ET);
@@ -836,6 +1056,11 @@ btn_P7_empty.listen("clicked", func {
 		print("P7: None");
 		setprop("sim/weight[6]/selected","None");
 		setprop("fdm/jsbsim/inertia/pointmass-weight-lbs[6]",0.0);
+		setprop("controls/armament/station[6]/jettison-all",0);
+		setprop("controls/armament/station[6]/release",0);
+		setprop("controls/armament/station[6]/release-all",0);
+		setprop("controls/armament/station[6]/release-stick",0);
+		setprop("controls/armament/station[6]/stick-size",0);
 		pylons_update();
 		});
 P7Ctls.addItem(btn_P7_empty);
@@ -851,6 +1076,11 @@ btn_P7_R_73.listen("clicked", func {
 		print("P7: R-73");
 		setprop("sim/weight[6]/selected","R-73");
 		setprop("fdm/jsbsim/inertia/pointmass-weight-lbs[6]",231.48); # R-73 = 105KG
+		setprop("controls/armament/station[6]/jettison-all",0);
+		setprop("controls/armament/station[6]/release",0);
+		setprop("controls/armament/station[6]/release-all",0);
+		setprop("controls/armament/station[6]/release-stick",0);
+		setprop("controls/armament/station[6]/stick-size",0);
 		pylons_update();
 		});
 P7Ctls.addItem(btn_P7_R_73);
@@ -866,6 +1096,11 @@ btn_P7_smk_red.listen("clicked", func {
 		print("P7: smoke-red");
 		setprop("sim/weight[6]/selected","smoke-red");
 		setprop("fdm/jsbsim/inertia/pointmass-weight-lbs[6]",33); # WEIGHT HERE IS A GUESS !
+		setprop("controls/armament/station[6]/jettison-all",0);
+		setprop("controls/armament/station[6]/release",0);
+		setprop("controls/armament/station[6]/release-all",0);
+		setprop("controls/armament/station[6]/release-stick",0);
+		setprop("controls/armament/station[6]/stick-size",0);
 		pylons_update();
 		});
 P7Ctls.addItem(btn_P7_smk_red);
@@ -881,6 +1116,11 @@ btn_P7_smk_yellw.listen("clicked", func {
 		print("P7: smoke-yellow");
 		setprop("sim/weight[6]/selected","smoke-yellow");
 		setprop("fdm/jsbsim/inertia/pointmass-weight-lbs[6]",33); # WEIGHT HERE IS A GUESS !
+		setprop("controls/armament/station[6]/jettison-all",0);
+		setprop("controls/armament/station[6]/release",0);
+		setprop("controls/armament/station[6]/release-all",0);
+		setprop("controls/armament/station[6]/release-stick",0);
+		setprop("controls/armament/station[6]/stick-size",0);
 		pylons_update();
 		});
 P7Ctls.addItem(btn_P7_smk_yellw);
@@ -896,6 +1136,11 @@ btn_P7_smk_blue.listen("clicked", func {
 		print("P7: smoke-blue");
 		setprop("sim/weight[6]/selected","smoke-blue");
 		setprop("fdm/jsbsim/inertia/pointmass-weight-lbs[6]",33); # WEIGHT HERE IS A GUESS !
+		setprop("controls/armament/station[6]/jettison-all",0);
+		setprop("controls/armament/station[6]/release",0);
+		setprop("controls/armament/station[6]/release-all",0);
+		setprop("controls/armament/station[6]/release-stick",0);
+		setprop("controls/armament/station[6]/stick-size",0);
 		pylons_update();
 		});
 P7Ctls.addItem(btn_P7_smk_blue);
