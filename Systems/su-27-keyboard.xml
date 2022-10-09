@@ -4,11 +4,11 @@
 <PropertyList>
 	
 	 <key n="4">
-	  <name>Ctrl-D</name>
+	  <name>Ctrl-d</name>
 	  <desc>Toggle DirectInput Mode (FBW Disengengage)</desc>
 	  <binding>
 	   <command>property-cycle</command>
-	   <property>su-27/SDU-10/active</property>
+	   <property>su-27/SDU-10/serviceable</property>
 	     <value type="int">0</value>
 		 <value type="int">1</value>
 	  </binding>
@@ -25,8 +25,8 @@
     </mod-ctrl>
   </key>
   
- <key n="43">
-  <name>+</name>
+ <key n="102">
+  <name>f</name>
   <desc>Fire selected WCS weapon</desc>
   <binding>
     <command>nasal</command>
@@ -34,8 +34,8 @@
   </binding>
  </key>
  
- <key n="45">
-  <name>-</name>
+ <key n="101">
+  <name>e</name>
   <desc>Cycle selected WCS weapon</desc>
   <binding>
  <command>property-cycle</command>
@@ -49,23 +49,32 @@
  </key> 
 
   
+ <key n="108">
+  <name>l</name>
+   <desc>Toggle Landing lights</desc>
+    <binding>
+    <command>property-toggle</command>
+     <property>controls/lighting/landing-lights</property>
+    </binding>
+ </key>
  <key n="76">
-  <name>L</name>
+  <name>Shift+l</name>
   <desc>Toggle Nav lights</desc>
   <binding>
    <command>property-toggle</command>
    <property>controls/lighting/nav-lights-switch</property>
   </binding>
-  <mod-ctrl>
-		<desc>Toggle flashing beacons lights</desc>
+ </key>
+ <key n="12">
+  <name>Ctrl+l</name>
+    <desc>Toggle flashing beacons lights</desc>
   <binding>
    <command>property-toggle</command>
    <property>controls/lighting/beacon-switch</property>
   </binding>
-  </mod-ctrl>
  </key>
  
-	<key n="80">
+	<!--<key n="80">
 	  <name>P</name>
 	  <desc>Parachute release</desc>
       <binding>
@@ -73,7 +82,7 @@
       <property>controls/flight/drag-chute</property>
        <value type="bool">true</value>
       </binding>
-  </key>
+  </key>-->
 
    <key n="99">
     <name>c</name>
@@ -85,12 +94,13 @@
   </key>
   
   
-	<key n="108">
-	<name>l</name>
-	 <desc>Toggle flashing beacons lights</desc>
+	<key n="113">
+	<name>q</name>
+	 <desc>Release Flares</desc>
 	  <binding>
-	   <command>property-toggle</command>
-	   <property>controls/lighting/beacon-switch</property>
+     <command>property-assign</command>
+	   <property>ai/submodels/submodel/flare-release</property>
+     <value type="bool">true</value>
 	  </binding>
 	 <mod-up>
 		<binding>
@@ -100,6 +110,14 @@
 		</binding>
 	 </mod-up>
 	</key>
+  <key n="81">
+  <name>Shift+q</name>
+    <binding>
+     <command>property-assign</command>
+    <property>ai/submodels/submodel/count</property>
+     <value type="int">50</value>
+    </binding>
+  </key>
 	
 <!--
 	<key n="70">
@@ -112,7 +130,7 @@
   </key> 
 -->
 	<key n="117">
-	  <name>U</name>
+	  <name>u</name>
 	  <desc>Toggle smoke</desc>
 	  <binding>
       <command>nasal</command>
@@ -147,8 +165,8 @@
 </binding>
  </key>
  
- <key n="82">
-  <name>R</name>
+ <key n="114">
+  <name>r</name>
   <desc>Toggle Radar On/Off</desc>
   <binding>
    <command>property-toggle</command>
@@ -156,7 +174,7 @@
   </binding>
  </key>
  
-  <key n="90">
+<!--  <key n="90">
   <name>Z</name>
   <desc>Reset view distance</desc>
   <repeatable type="bool">false</repeatable>
@@ -179,7 +197,7 @@
 	  </script>
   </binding>
 
- </key>
+ </key>-->
  
  <key n="357">
   <name>Up</name>
@@ -270,15 +288,6 @@
 <!--
  Need Re-order 
 -->
- <key n="74"> 
-  <name>J</name>
-  <desc>Jettison Drag Parachute</desc>
-  <binding> 
-   <command>property-assign</command>
-   <property>fdm/jsbsim/fcs/parachute/drop_cmd</property>
-   <value type="double">1.0</value>
-  </binding>
- </key>
  <key n="106"> 
   <name>j</name>
   <desc>Deploy Drag Parachute</desc>
@@ -287,6 +296,33 @@
    <property>fdm/jsbsim/fcs/parachute_reef-cmd-norm</property>
    <value type="double">1.0</value>
   </binding>
+ </key>
+ <key n="74"> 
+  <name>Shift+j</name>
+  <mod-shift>
+  <desc>Jettison Drag Parachute</desc>
+  <binding> 
+   <command>property-assign</command>
+   <property>fdm/jsbsim/fcs/parachute/drop_cmd</property>
+   <value type="double">1.0</value>
+  </binding>
+  </mod-shift>
+ </key>
+ <key n="14"> 
+  <name>Shift+n</name>
+  <mod-ctrl>
+    <desc>Repack Drag Parachute</desc>
+  <binding> 
+   <command>property-assign</command>
+   <property>fdm/jsbsim/fcs/parachute/drop_cmd</property>
+   <value type="double">0.0</value>
+  </binding>
+  <binding> 
+   <command>property-assign</command>
+   <property>fdm/jsbsim/fcs/parachute_reef-cmd-norm</property>
+   <value type="double">0.0</value>
+  </binding>
+  </mod-ctrl>
  </key>
 
 </PropertyList>

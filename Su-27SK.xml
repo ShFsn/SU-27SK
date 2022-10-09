@@ -201,7 +201,7 @@
    <location unit="IN">
      <x> 112.09 </x>
      <y>   0.00 </y>
-     <z> -103.47 </z>
+     <z> -90.47 </z>
    </location>
    <static_friction>  0.80 </static_friction>
    <dynamic_friction> 0.50 </dynamic_friction>
@@ -217,7 +217,7 @@
    <location unit="IN">
      <x> 538.04 </x>
      <y> -52.09 </y>
-     <z> -103.47 </z>
+     <z> -90.47 </z>
    </location>
    <static_friction>  0.80 </static_friction>
    <dynamic_friction> 0.50 </dynamic_friction>
@@ -233,7 +233,7 @@
    <location unit="IN">
      <x> 538.04 </x>
      <y>  52.09 </y>
-     <z> -103.47 </z>
+     <z> -90.47 </z>
    </location>
    <static_friction>  0.80 </static_friction>
    <dynamic_friction> 0.50 </dynamic_friction>
@@ -245,28 +245,180 @@
    <retractable>1</retractable>
   </contact>
 
-  <contact type="STRUCTURE" name="LEFT_WING">
-    <location unit="IN">
-     <x> 517.35 </x>
-     <y> -24.12 </y>
-     <z> -21.56 </z>
+  <contact type="STRUCTURE" name="NOSE">
+    <location unit="M">
+     <x> 0.014  </x>
+     <y> 0.0    </y>
+     <z> -0.11  </z>
     </location>
-    <static_friction>  1.00 </static_friction>
-    <dynamic_friction> 1.00 </dynamic_friction>
-    <spring_coeff unit="LBS/FT">      67142.25 </spring_coeff>
-    <damping_coeff unit="LBS/FT/SEC"> 67142.25 </damping_coeff>
+    <static_friction> 0.8 </static_friction>
+    <dynamic_friction> 0.5 </dynamic_friction>
+    <rolling_friction> 0 </rolling_friction>
+    <spring_coeff unit="N/M"> 3e+06 </spring_coeff>
+    <damping_coeff unit="N/M/SEC"> 630720 </damping_coeff>
+    <max_steer unit="DEG"> 0 </max_steer>
+    <brake_group> NONE </brake_group>
+    <retractable> 0 </retractable>
   </contact>
 
-  <contact type="STRUCTURE" name="RIGHT_WING">
-    <location unit="IN">
-     <x> 517.35 </x>
-     <y>  24.12 </y>
-     <z> -21.56 </z>
+  <contact type="STRUCTURE" name="TAIL">
+    <location unit="M">
+     <x> 22.08  </x>
+     <y> 0.00   </y>
+     <z> 0.01   </z>
     </location>
-    <static_friction>  1.00 </static_friction>
-    <dynamic_friction> 1.00 </dynamic_friction>
-    <spring_coeff unit="LBS/FT">      67142.25 </spring_coeff>
-    <damping_coeff unit="LBS/FT/SEC"> 67142.25 </damping_coeff>
+    <static_friction> 0.8 </static_friction>
+    <dynamic_friction> 0.5 </dynamic_friction>
+    <rolling_friction> 0 </rolling_friction>
+    <spring_coeff unit="N/M"> 3e+06 </spring_coeff>
+    <damping_coeff unit="N/M/SEC"> 630720 </damping_coeff>
+    <max_steer unit="DEG"> 0 </max_steer>
+    <brake_group> NONE </brake_group>
+    <retractable> 0 </retractable>
+  </contact>
+
+  <contact type="STRUCTURE" name="CANOPY">
+    <location unit="M">
+     <x> 5.08   </x>
+     <y> 0.00   </y>
+     <z> 1.72   </z>
+    </location>
+    <static_friction> 0.8 </static_friction>
+    <dynamic_friction> 0.5 </dynamic_friction>
+    <rolling_friction> 0 </rolling_friction>
+    <spring_coeff unit="N/M"> 3e+06 </spring_coeff>
+    <damping_coeff unit="N/M/SEC"> 630720 </damping_coeff>
+    <max_steer unit="DEG"> 0 </max_steer>
+    <brake_group> NONE </brake_group>
+    <retractable> 0 </retractable>
+  </contact>
+
+  <contact type="STRUCTURE" name="LEFT WING">
+    <location unit="M">
+     <x> 15.97  </x>
+     <y> -7.62  </y>
+     <z> 0.31   </z>
+    </location>
+    <static_friction> 0.8 </static_friction>
+    <dynamic_friction> 0.5 </dynamic_friction>
+    <rolling_friction> 0 </rolling_friction>
+    <spring_coeff unit="N/M"> 3e+06 </spring_coeff>
+    <damping_coeff unit="N/M/SEC"> 630720 </damping_coeff>
+    <max_steer unit="DEG"> 0 </max_steer>
+    <brake_group> NONE </brake_group>
+    <retractable> 0 </retractable>
+  </contact>
+
+  <contact type="STRUCTURE" name="RIGHT WING">
+    <location unit="M">
+     <x> 15.97  </x>
+     <y> 7.62   </y>
+     <z> 0.31   </z>
+    </location>
+    <static_friction> 0.8 </static_friction>
+    <dynamic_friction> 0.5 </dynamic_friction>
+    <rolling_friction> 0 </rolling_friction>
+    <spring_coeff unit="N/M"> 3e+06 </spring_coeff>
+    <damping_coeff unit="N/M/SEC"> 630720 </damping_coeff>
+    <max_steer unit="DEG"> 0 </max_steer>
+    <brake_group> NONE </brake_group>
+    <retractable> 0 </retractable>
+  </contact>
+
+  <contact type="STRUCTURE" name="LEFT EXHAUST">
+    <location unit="M">
+     <x> 18.62  </x>
+     <y> -1.27  </y>
+     <z> -0.75   </z>
+    </location>
+    <static_friction> 0.8 </static_friction>
+    <dynamic_friction> 0.5 </dynamic_friction>
+    <rolling_friction> 0 </rolling_friction>
+    <spring_coeff unit="N/M"> 3e+06 </spring_coeff>
+    <damping_coeff unit="N/M/SEC"> 630720 </damping_coeff>
+    <max_steer unit="DEG"> 0 </max_steer>
+    <brake_group> NONE </brake_group>
+    <retractable> 0 </retractable>
+  </contact>
+
+  <contact type="STRUCTURE" name="RIGHT EXHAUST">
+    <location unit="M">
+     <x> 18.62  </x>
+     <y> 1.27  </y>
+     <z> -0.75   </z>
+    </location>
+    <static_friction> 0.8 </static_friction>
+    <dynamic_friction> 0.5 </dynamic_friction>
+    <rolling_friction> 0 </rolling_friction>
+    <spring_coeff unit="N/M"> 3e+06 </spring_coeff>
+    <damping_coeff unit="N/M/SEC"> 630720 </damping_coeff>
+    <max_steer unit="DEG"> 0 </max_steer>
+    <brake_group> NONE </brake_group>
+    <retractable> 0 </retractable>
+  </contact>
+
+  <contact type="STRUCTURE" name="LEFT INTAKE">
+    <location unit="M">
+     <x> 18.3   </x>
+     <y> -1.06  </y>
+     <z> -0.82   </z>
+    </location>
+    <static_friction> 0.8 </static_friction>
+    <dynamic_friction> 0.5 </dynamic_friction>
+    <rolling_friction> 0 </rolling_friction>
+    <spring_coeff unit="N/M"> 3e+06 </spring_coeff>
+    <damping_coeff unit="N/M/SEC"> 630720 </damping_coeff>
+    <max_steer unit="DEG"> 0 </max_steer>
+    <brake_group> NONE </brake_group>
+    <retractable> 0 </retractable>
+  </contact>
+
+  <contact type="STRUCTURE" name="LEFT INTAKE">
+    <location unit="M">
+     <x> 18.3   </x>
+     <y> 1.06  </y>
+     <z> -0.82   </z>
+    </location>
+    <static_friction> 0.8 </static_friction>
+    <dynamic_friction> 0.5 </dynamic_friction>
+    <rolling_friction> 0 </rolling_friction>
+    <spring_coeff unit="N/M"> 3e+06 </spring_coeff>
+    <damping_coeff unit="N/M/SEC"> 630720 </damping_coeff>
+    <max_steer unit="DEG"> 0 </max_steer>
+    <brake_group> NONE </brake_group>
+    <retractable> 0 </retractable>
+  </contact>
+
+  <contact type="STRUCTURE" name="LEFT STABILIZER">
+    <location unit="M">
+     <x> 17.68  </x>
+     <y> -2.2   </y>
+     <z> 3.76   </z>
+    </location>
+    <static_friction> 0.8 </static_friction>
+    <dynamic_friction> 0.5 </dynamic_friction>
+    <rolling_friction> 0 </rolling_friction>
+    <spring_coeff unit="N/M"> 3e+06 </spring_coeff>
+    <damping_coeff unit="N/M/SEC"> 630720 </damping_coeff>
+    <max_steer unit="DEG"> 0 </max_steer>
+    <brake_group> NONE </brake_group>
+    <retractable> 0 </retractable>
+  </contact>
+
+  <contact type="STRUCTURE" name="LEFT STABILIZER">
+    <location unit="M">
+     <x> 17.68  </x>
+     <y> 2.2   </y>
+     <z> 3.76   </z>
+    </location>
+    <static_friction> 0.8 </static_friction>
+    <dynamic_friction> 0.5 </dynamic_friction>
+    <rolling_friction> 0 </rolling_friction>
+    <spring_coeff unit="N/M"> 3e+06 </spring_coeff>
+    <damping_coeff unit="N/M/SEC"> 630720 </damping_coeff>
+    <max_steer unit="DEG"> 0 </max_steer>
+    <brake_group> NONE </brake_group>
+    <retractable> 0 </retractable>
   </contact>
 
  </ground_reactions>
@@ -496,8 +648,23 @@
         <min> -0.50 </min>
         <max>  0.50 </max>
       </range>
-      <output>fcs/elevator-pos-rad</output>
+      <output>fcs/elevator-pos-raw</output>
    </aerosurface_scale>
+
+    <kinematic name="Elevator filter">
+     <input>fcs/elevator-pos-raw</input>
+      <traverse>
+        <setting>
+          <position>-1</position>
+          <time>0</time>
+        </setting>
+        <setting>
+          <position>1</position>
+          <time>1</time>
+        </setting>
+      </traverse>
+      <output>fcs/elevator-pos-rad</output>
+    </kinematic>
 
    <aerosurface_scale name="elevator normalization">
       <input>fcs/elevator-pos-rad</input>
@@ -531,8 +698,23 @@
         <min> -0.35 </min>
         <max>  0.35 </max>
       </range>
-      <output>fcs/left-aileron-pos-rad</output>
+      <output>fcs/left-aileron-pos-raw</output>
    </aerosurface_scale>
+
+    <kinematic name="Left Aileron filter">
+     <input>fcs/left-aileron-pos-raw</input>
+      <traverse>
+        <setting>
+          <position>-1</position>
+          <time>0</time>
+        </setting>
+        <setting>
+          <position>1</position>
+          <time>1</time>
+        </setting>
+      </traverse>
+      <output>fcs/left-aileron-pos-rad</output>
+    </kinematic>
 
    <aerosurface_scale name="Right Aileron Control">
       <input>fcs/roll-trim-sum</input>
@@ -540,8 +722,23 @@
         <min> -0.35 </min>
         <max>  0.35 </max>
       </range>
-      <output>fcs/right-aileron-pos-rad</output>
+      <output>fcs/right-aileron-pos-raw</output>
    </aerosurface_scale>
+
+    <kinematic name="Right Aileron filter">
+     <input>fcs/right-aileron-pos-raw</input>
+      <traverse>
+        <setting>
+          <position>-1</position>
+          <time>0</time>
+        </setting>
+        <setting>
+          <position>1</position>
+          <time>1</time>
+        </setting>
+      </traverse>
+      <output>fcs/right-aileron-pos-rad</output>
+    </kinematic>
 
    <aerosurface_scale name="left aileron normalization">
       <input>fcs/left-aileron-pos-rad</input>
@@ -614,8 +811,23 @@
         <min> -0.35 </min>
         <max>  0.35 </max>
       </range>
-      <output>fcs/rudder-pos-rad</output>
+      <output>fcs/rudder-pos-raw</output>
    </aerosurface_scale>
+
+    <kinematic name="Rudder filter">
+     <input>fcs/rudder-pos-raw</input>
+      <traverse>
+        <setting>
+          <position>-1</position>
+          <time>0</time>
+        </setting>
+        <setting>
+          <position>1</position>
+          <time>1</time>
+        </setting>
+      </traverse>
+      <output>fcs/rudder-pos-rad</output>
+    </kinematic>
 
    <aerosurface_scale name="rudder normalization">
       <input>fcs/rudder-pos-rad</input>

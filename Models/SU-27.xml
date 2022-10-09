@@ -403,7 +403,7 @@ livery_update.stop();
 	<type>rotate</type>
 	<object-name>TF_Left_Rudder</object-name>
 	<property>surface-positions/rudder-pos-norm</property>
-	<factor>-25</factor>
+	<factor>25</factor>
 	<axis>
 		<x1-m>17.300</x1-m> <x2-m>17.900</x2-m>
 		<y1-m>-2.040</y1-m> <y2-m>-2.040</y2-m>
@@ -416,7 +416,7 @@ livery_update.stop();
 	<type>rotate</type>
 	<object-name>TF_Right_Rudder</object-name>
 	<property>surface-positions/rudder-pos-norm</property>
-	<factor>-25</factor>
+	<factor>25</factor>
 	<axis>
 		<x1-m>17.300</x1-m> <x2-m>17.900</x2-m>
 		<y1-m>2.040</y1-m> <y2-m>2.040</y2-m>
@@ -671,8 +671,8 @@ livery_update.stop();
 	<object-name>UC_Nose_Upper_Strut</object-name>
 	<object-name>UC_Nose_LLights</object-name>
 	<object-name>UC_Nose_Upright_Brace</object-name>
-	<property>surface-positions/left-rudder-pos-norm</property>
-	<factor>-53</factor>
+	<property>surface-positions/rudder-pos-norm</property>
+	<factor>53</factor>
 	<axis>
 		<x1-m>7.624</x1-m> <x2-m>7.472</x2-m>
 		<y1-m>0.0</y1-m> <y2-m>0.0</y2-m>
@@ -788,8 +788,8 @@ livery_update.stop();
   <animation>
 	<type>rotate</type>
 	<object-name>UC_Nose_Lower_Strut</object-name>
-	<property>surface-positions/left-rudder-pos-norm</property>
-	<factor>-53</factor>
+	<property>surface-positions/rudder-pos-norm</property>
+	<factor>53</factor>
 	<axis>
 		<x1-m>7.624</x1-m> <x2-m>7.472</x2-m>
 		<y1-m>0.0</y1-m> <y2-m>0.0</y2-m>
@@ -848,8 +848,8 @@ livery_update.stop();
 	<object-name>UC_Nose_Tyres</object-name>
 	<object-name>UC_Nose_Hubs</object-name>
 	<object-name>UC_Nose_BSArm</object-name>
-	<property>surface-positions/left-rudder-pos-norm</property>
-	<factor>-53</factor>
+	<property>surface-positions/rudder-pos-norm</property>
+	<factor>53</factor>
 	<axis>
 		<x1-m>7.624</x1-m> <x2-m>7.472</x2-m>
 		<y1-m>0.0</y1-m> <y2-m>0.0</y2-m>
@@ -932,8 +932,8 @@ livery_update.stop();
   <animation>
 	<type>rotate</type>
 	<object-name>UC_Nose_WGuard</object-name>
-	<property>surface-positions/left-rudder-pos-norm</property>
-	<factor>-53</factor>
+	<property>surface-positions/rudder-pos-norm</property>
+	<factor>53</factor>
 	<axis>
 		<x1-m>7.624</x1-m> <x2-m>7.472</x2-m>
 		<y1-m>0.0</y1-m> <y2-m>0.0</y2-m>
