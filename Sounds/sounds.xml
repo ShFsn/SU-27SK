@@ -71,7 +71,7 @@
 <AfterBurner>  <!--AfterBurner-inside-->
 		<name>AfterBurner-inside</name>
 		<mode>looped</mode>
-		<path>Aircraft/SU-27SK/Sounds/AfterBurner.wav</path>
+		<path>Aircraft/SU-27SK/Sounds/reheat.wav</path>
 		<condition>
 				<and>
 						<property>sim/current-view/internal</property>
@@ -218,7 +218,7 @@
 <AfterBurner>  <!--AfterBurner-outside-->
 		<name>AfterBurner-outside</name>
 		<mode>looped</mode>
-		<path>Aircraft/SU-27SK/Sounds/AfterBurner.wav</path>
+		<path>Aircraft/SU-27SK/Sounds/reheat.wav</path>
 		<condition>
 				<and>
 				<not>
