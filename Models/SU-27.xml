@@ -704,7 +704,7 @@ livery_update.stop();
 	<object-name>UC_Nose_Upper_Strut</object-name>
 	<object-name>UC_Nose_LLights</object-name>
 	<object-name>UC_Nose_Upright_Brace</object-name>
-	<property>surface-positions/rudder-pos-norm</property>
+	<property>gear/gear/steering-norm</property>
 	<factor>53</factor>
 	<axis>
 		<x1-m>7.827</x1-m> <x2-m>7.722</x2-m>
@@ -819,7 +819,7 @@ livery_update.stop();
   <animation>
 	<type>rotate</type>
 	<object-name>UC_Nose_Lower_Strut</object-name>
-	<property>surface-positions/rudder-pos-norm</property>
+	<property>gear/gear/steering-norm</property>
 	<factor>53</factor>
     <interpolation>
       <entry>
@@ -887,7 +887,7 @@ livery_update.stop();
   <animation>
 	<type>rotate</type>
 	<object-name>UC_Nose_WGuard</object-name>
-	<property>surface-positions/rudder-pos-norm</property>
+	<property>gear/gear/steering-norm</property>
 	<factor>53</factor>
 	<axis>
 		<x1-m>7.827</x1-m> <x2-m>7.722</x2-m>
@@ -1014,7 +1014,7 @@ livery_update.stop();
 	<object-name>UC_Nose_Tyres</object-name>
 	<object-name>UC_Nose_Hubs</object-name>
 	<object-name>UC_Nose_BSArm</object-name>
-	<property>surface-positions/rudder-pos-norm</property>
+	<property>gear/gear/steering-norm</property>
 	<factor>53</factor>
 	<axis>
 		<x1-m>7.827</x1-m> <x2-m>7.722</x2-m>

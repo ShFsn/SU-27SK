@@ -953,6 +953,61 @@ Need testing :experimental brake parachute
 
   </channel>
 
+        <channel name="Steering">
+
+          <fcs_function name="gear/steering-cmd-norm">
+            <function>
+              <quotient>
+                <property>fcs/rudder-cmd-norm</property>
+                <max>
+                  <value>1.0</value>
+                  <product>
+                    <sqrt>
+                      <sum>
+                        <product>
+                          <property>velocities/u-fps</property>
+                          <property>velocities/u-fps</property>
+                        </product>
+                        <product>
+                          <property>velocities/v-fps</property>
+                          <property>velocities/v-fps</property>
+                        </product>
+                        <product>
+                          <property>velocities/w-fps</property>
+                          <property>velocities/w-fps</property>
+                        </product>
+                      </sum>
+                    </sqrt>
+                    <value>0.05</value>
+                  </product>
+                </max>
+              </quotient>
+            </function>
+          </fcs_function>
+
+          <kinematic name="gear/steer-pos-deg">
+            <input>gear/steering-cmd-norm</input>
+            <traverse>
+              <setting>
+                <position>-35</position>
+                <time>0</time>
+              </setting>
+              <setting>
+                <position>35</position>
+                <time>1</time>
+              </setting>
+            </traverse>
+          </kinematic>
+
+          <!-- <output> in <kinematic> doesn't seem to work here. -->
+          <pure_gain name="gear/steer-pos-deg-workaround">
+            <input>gear/steer-pos-deg</input>
+            <gain>-1</gain>
+            <output>fcs/steer-pos-deg</output>
+          </pure_gain>
+
+        </channel>
+
  </flight_control>
 
  <aerodynamics>
