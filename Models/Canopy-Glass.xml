@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+
+<!-- SU-27 model config file - VooDoo -->
+
+
+<PropertyList>
+
+  <path>Canopy-Glass.ac</path>
+  
+  <!-- rembrandt auto switching for glass -->
+  <effect>
+  <inherits-from>Effects/model-transparent</inherits-from>
+  <condition>
+      <greater-than>
+        <property>sim/multiplay/generic/float[6]</property>
+        <value>9</value>
+      </greater-than>
+	   <property>/sim/rendering/rembrandt/enabled</property>
+    </condition>
+
+  <object-name>canopy.glass</object-name>
+  <object-name>object.001</object-name>
+  
+</effect>
+  
+  <!-- canopy animation -->
+ 
+ <animation>
+    <type>rotate</type>
+			<object-name>canopy.glass</object-name>
+	  <property>canopy/position-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep>  0 </dep></entry>
+      <entry><ind> 1 </ind><dep> 45 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m>6.7</x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  1.5</z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+
+</PropertyList>

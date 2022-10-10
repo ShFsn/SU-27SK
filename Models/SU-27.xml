@@ -12,6 +12,9 @@
     <pitch-deg>0</pitch-deg>
   </offsets>
   -->
+  <model>
+  	<path>Canopy-Glass.xml</path>
+  </model>
 
   <!-- MP sound call -->
   <sound><path>Aircraft/SU-27SK/Sounds/mp-sound.xml</path></sound>
@@ -324,7 +327,7 @@ livery_update.stop();
 
   <object-name>GLS_Canopy_Rear</object-name>
   <object-name>GLS_Canopy_Front</object-name>
-  <object-name>canopy.glass</object-name>
+  <!--<object-name>canopy.glass</object-name>-->
   <object-name>FlashRouge</object-name>
   <object-name>hudglass</object-name>
   <object-name>flash</object-name>
@@ -1064,6 +1067,25 @@ livery_update.stop();
     </axis>
   </animation>
 
+<!-- Whell Rollspin -->
+   <animation>
+    <object-name>UC_Nose_Tyres</object-name>
+    <object-name>UC_Nose_Hubs</object-name>
+	  <type>spin</type>
+	  <property>fdm/jsbsim/gear/unit/wheel-speed-fps</property>
+	  <factor>-9.129</factor>
+	  <center>
+	   <x-m>7.802</x-m>
+	   <y-m> 0   </y-m>
+	   <z-m>-1.976</z-m>
+	  </center>
+	  <axis>
+	   <x>0</x>
+	   <y>1</y>
+	   <z>0</z>
+	  </axis>
+	 </animation> 
+
 <!-- Doors -->
 <!-- Front Door -->
 
@@ -1767,6 +1789,25 @@ livery_update.stop();
       <z>0.0</z>
     </axis>
   </animation>
+
+<!-- Whell Rollspin -->
+   <animation>
+    <object-name>UC_Main_Left_Tyre</object-name>
+		<object-name>UC_Main_Left_Hub.001</object-name>
+	  <type>spin</type>
+	  <property>fdm/jsbsim/gear/unit[1]/wheel-speed-fps</property>
+	  <factor>-5.611</factor>
+	  <center>
+	   <x-m>13.631</x-m>
+	   <y-m> 2.153   </y-m>
+	   <z-m>-1.9948</z-m>
+	  </center>
+	  <axis>
+	   <x>0</x>
+	   <y>1</y>
+	   <z>0</z>
+	  </axis>
+	 </animation>
 
 <!-- Doors -->
 <!-- Front -->
@@ -2518,6 +2559,25 @@ livery_update.stop();
       <z>0.0</z>
     </axis>
   </animation>
+
+<!-- Whell Rollspin -->
+   <animation>
+    <object-name>UC_Main_Right_Tyre</object-name>
+		<object-name>UC_Main_Right_Hub.001</object-name>
+	  <type>spin</type>
+	  <property>fdm/jsbsim/gear/unit[2]/wheel-speed-fps</property>
+	  <factor>-5.611</factor>
+	  <center>
+	   <x-m>13.631</x-m>
+	   <y-m> -2.153   </y-m>
+	   <z-m>-1.9948</z-m>
+	  </center>
+	  <axis>
+	   <x>0</x>
+	   <y>1</y>
+	   <z>0</z>
+	  </axis>
+	 </animation>
   
  <!-- Nozzles -->
   
@@ -2940,7 +3000,7 @@ livery_update.stop();
     <type>rotate</type>
     	<object-name>GLS_Canopy_Rear</object-name>
 			<object-name>GLS_Canopy_Rear.001</object-name>
-			<object-name>canopy.glass</object-name>
+			<!--<object-name>canopy.glass</object-name>-->
 	  <property>canopy/position-norm</property>
     <interpolation>
       <entry><ind> 0 </ind><dep>  0 </dep></entry>
