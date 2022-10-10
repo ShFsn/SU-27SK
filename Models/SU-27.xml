@@ -665,21 +665,6 @@ livery_update.stop();
   </animation>
 
 <!-- Upper Strut group -->
-<!-- Steering -->
-  <animation>
-	<type>rotate</type>
-	<object-name>UC_Nose_Upper_Strut</object-name>
-	<object-name>UC_Nose_LLights</object-name>
-	<object-name>UC_Nose_Upright_Brace</object-name>
-	<property>surface-positions/rudder-pos-norm</property>
-	<factor>53</factor>
-	<axis>
-		<x1-m>7.624</x1-m> <x2-m>7.472</x2-m>
-		<y1-m>0.0</y1-m> <y2-m>0.0</y2-m>
-		<z1-m>-0.074</z1-m> <z2-m>-1.582</z2-m>
-	</axis>
-  </animation>
-
 <!-- Extend/Retract -->
   <animation>
 	<type>rotate</type>
@@ -702,15 +687,30 @@ livery_update.stop();
       </entry>
     </interpolation>
     <center>
-      <x-m>7.66</x-m>
+      <x-m>7.87</x-m>
       <y-m>0.0</y-m>
-      <z-m>0.15</z-m>
+      <z-m>0.07</z-m>
     </center>
     <axis>
       <x>0.0</x>
       <y>1.0</y>
       <z>0.0</z>
     </axis>
+  </animation>
+
+<!-- Steering -->
+  <animation>
+	<type>rotate</type>
+	<object-name>UC_Nose_Upper_Strut</object-name>
+	<object-name>UC_Nose_LLights</object-name>
+	<object-name>UC_Nose_Upright_Brace</object-name>
+	<property>surface-positions/rudder-pos-norm</property>
+	<factor>53</factor>
+	<axis>
+		<x1-m>7.827</x1-m> <x2-m>7.722</x2-m>
+		<y1-m>0.0</y1-m> <y2-m>0.0</y2-m>
+		<z1-m>-0.422</z1-m> <z2-m>-1.451</z2-m>
+	</axis>
   </animation>
 
 <!-- Rear Post -->
@@ -734,9 +734,9 @@ livery_update.stop();
       </entry>
     </interpolation>
     <center>
-      <x-m>7.66</x-m>
+      <x-m>7.87</x-m>
       <y-m>0.0</y-m>
-      <z-m>0.15</z-m>
+      <z-m>0.07</z-m>
     </center>
     <axis>
       <x>0.0</x>
@@ -784,19 +784,6 @@ livery_update.stop();
   </animation>
 
 <!-- Lower Strut -->
-<!-- Steering -->
-  <animation>
-	<type>rotate</type>
-	<object-name>UC_Nose_Lower_Strut</object-name>
-	<property>surface-positions/rudder-pos-norm</property>
-	<factor>53</factor>
-	<axis>
-		<x1-m>7.624</x1-m> <x2-m>7.472</x2-m>
-		<y1-m>0.0</y1-m> <y2-m>0.0</y2-m>
-		<z1-m>-0.074</z1-m> <z2-m>-1.582</z2-m>
-	</axis>
-  </animation>
-
 <!-- Extend/Retract -->
   <animation>
 	<type>rotate</type>
@@ -817,15 +804,38 @@ livery_update.stop();
       </entry>
     </interpolation>
     <center>
-      <x-m>7.66</x-m>
+      <x-m>7.87</x-m>
       <y-m>0.0</y-m>
-      <z-m>0.15</z-m>
+      <z-m>0.07</z-m>
     </center>
     <axis>
       <x>0.0</x>
       <y>1.0</y>
       <z>0.0</z>
     </axis>
+  </animation>
+
+<!-- Steering -->
+  <animation>
+	<type>rotate</type>
+	<object-name>UC_Nose_Lower_Strut</object-name>
+	<property>surface-positions/rudder-pos-norm</property>
+	<factor>53</factor>
+    <interpolation>
+      <entry>
+        <ind>0.0</ind>
+        <dep>0.0</dep>
+      </entry>
+      <entry>
+        <ind>2.5</ind>
+        <dep>159.0</dep>
+      </entry>
+    </interpolation>
+	<axis>
+		<x1-m>7.827</x1-m> <x2-m>7.722</x2-m>
+		<y1-m>0.0</y1-m> <y2-m>0.0</y2-m>
+		<z1-m>-0.422</z1-m> <z2-m>-1.451</z2-m>
+	</axis>
   </animation>
 
 <!-- Compression -->
@@ -833,7 +843,7 @@ livery_update.stop();
 	<type>translate</type>
 	<object-name>UC_Nose_Lower_Strut</object-name>
     <property>gear/gear[0]/compression-norm</property>
-	<factor>0.14</factor>
+	<factor>0.08</factor>
     <axis>
       <x>0.1007</x>
       <y>0</y>
@@ -841,106 +851,7 @@ livery_update.stop();
     </axis>
   </animation>
 
-<!-- Tyres, Hubs & Swing-arm -->
-<!-- Steering -->
-  <animation>
-	<type>rotate</type>
-	<object-name>UC_Nose_Tyres</object-name>
-	<object-name>UC_Nose_Hubs</object-name>
-	<object-name>UC_Nose_BSArm</object-name>
-	<property>surface-positions/rudder-pos-norm</property>
-	<factor>53</factor>
-	<axis>
-		<x1-m>7.624</x1-m> <x2-m>7.472</x2-m>
-		<y1-m>0.0</y1-m> <y2-m>0.0</y2-m>
-		<z1-m>-0.074</z1-m> <z2-m>-1.582</z2-m>
-	</axis>
-  </animation>
-
-<!-- Extend/Retract -->
-  <animation>
-	<type>rotate</type>
-	<object-name>UC_Nose_Tyres</object-name>
-	<object-name>UC_Nose_Hubs</object-name>
-	<object-name>UC_Nose_BSArm</object-name>
-    <property>gear/gear[0]/position-norm</property>
-    <interpolation>
-      <entry>
-        <ind>0.0</ind>
-        <dep>95.0</dep>
-      </entry>
-      <entry>
-        <ind>0.5</ind>
-        <dep>95.0</dep>
-      </entry>
-      <entry>
-        <ind>1.0</ind>
-        <dep>0.0</dep>
-      </entry>
-    </interpolation>
-    <center>
-      <x-m>7.66</x-m>
-      <y-m>0.0</y-m>
-      <z-m>0.15</z-m>
-    </center>
-    <axis>
-      <x>0.0</x>
-      <y>1.0</y>
-      <z>0.0</z>
-    </axis>
-  </animation>
-
-<!-- Compression -->
-  <animation>
-	<type>rotate</type>
-	<object-name>UC_Nose_Tyres</object-name>
-	<object-name>UC_Nose_Hubs</object-name>
-	<object-name>UC_Nose_BSArm</object-name>
-    <property>gear/gear[0]/compression-norm</property>
-    <interpolation>
-      <entry>
-        <ind>0.0</ind>
-        <dep>0.0</dep>
-      </entry>
-      <entry>
-        <ind>0.3333</ind>
-        <dep>-26</dep>
-      </entry>
-      <entry>
-        <ind>0.6666</ind>
-        <dep>-42</dep>
-      </entry>
-      <entry>
-        <ind>1.0</ind>
-        <dep>-56</dep>
-      </entry>
-    </interpolation>
-    <center>
-      <x-m>7.31</x-m>
-      <y-m>0.0</y-m>
-      <z-m>-1.47</z-m>
-    </center>
-    <axis>
-      <x>0.0</x>
-      <y>1.0</y>
-      <z>0.0</z>
-    </axis>
-  </animation>
-
 <!-- Wheel Guard -->
-<!-- Steering -->
-  <animation>
-	<type>rotate</type>
-	<object-name>UC_Nose_WGuard</object-name>
-	<property>surface-positions/rudder-pos-norm</property>
-	<factor>53</factor>
-	<axis>
-		<x1-m>7.624</x1-m> <x2-m>7.472</x2-m>
-		<y1-m>0.0</y1-m> <y2-m>0.0</y2-m>
-		<z1-m>-0.074</z1-m> <z2-m>-1.582</z2-m>
-	</axis>
-  </animation>
-
 <!-- Extend/Retract -->
   <animation>
 	<type>rotate</type>
@@ -961,9 +872,9 @@ livery_update.stop();
       </entry>
     </interpolation>
     <center>
-      <x-m>7.66</x-m>
+      <x-m>7.87</x-m>
       <y-m>0.0</y-m>
-      <z-m>0.15</z-m>
+      <z-m>0.07</z-m>
     </center>
     <axis>
       <x>0.0</x>
@@ -972,16 +883,50 @@ livery_update.stop();
     </axis>
   </animation>
 
+<!-- Steering -->
+  <animation>
+	<type>rotate</type>
+	<object-name>UC_Nose_WGuard</object-name>
+	<property>surface-positions/rudder-pos-norm</property>
+	<factor>53</factor>
+	<axis>
+		<x1-m>7.827</x1-m> <x2-m>7.722</x2-m>
+		<y1-m>0.0</y1-m> <y2-m>0.0</y2-m>
+		<z1-m>-0.422</z1-m> <z2-m>-1.451</z2-m>
+	</axis>
+  </animation>
+
 <!-- Compression -->
   <animation>
 	<type>rotate</type>
 	<object-name>UC_Nose_WGuard</object-name>
     <property>gear/gear[0]/compression-norm</property>
-	<factor>-60</factor>
+    <interpolation>
+      <entry>
+        <ind>0.0</ind>
+        <dep>0.0</dep>
+      </entry>
+      <entry>
+        <ind>0.30</ind>
+        <dep>-10</dep>
+      </entry>
+      <entry>
+        <ind>0.50</ind>
+        <dep>-15</dep>
+      </entry>
+      <entry>
+        <ind>1.0</ind>
+        <dep>-30</dep>
+      </entry>
+      <entry>
+        <ind>2.5</ind>
+        <dep>-75</dep>
+      </entry>
+    </interpolation>
     <center>
-      <x-m>7.31</x-m>
+      <x-m>7.547</x-m>
       <y-m>0.0</y-m>
-      <z-m>-1.47</z-m>
+      <z-m>-1.495</z-m>
     </center>
     <axis>
       <x>0.0</x>
@@ -995,11 +940,122 @@ livery_update.stop();
 	<type>rotate</type>
 	<object-name>UC_Nose_WGuard</object-name>
     <property>gear/gear[0]/compression-norm</property>
-	<factor>60</factor>
+    <interpolation>
+      <entry>
+        <ind>0.0</ind>
+        <dep>0.0</dep>
+      </entry>
+      <entry>
+        <ind>0.30</ind>
+        <dep>10</dep>
+      </entry>
+      <entry>
+        <ind>0.50</ind>
+        <dep>15</dep>
+      </entry>
+      <entry>
+        <ind>1.0</ind>
+        <dep>30</dep>
+      </entry>
+      <entry>
+        <ind>2.5</ind>
+        <dep>75</dep>
+      </entry>
+    </interpolation>
     <center>
-      <x-m>7.57</x-m>
+      <x-m>7.804</x-m>
       <y-m>0.0</y-m>
-      <z-m>-1.97</z-m>
+      <z-m>-1.982</z-m>
+    </center>
+    <axis>
+      <x>0.0</x>
+      <y>1.0</y>
+      <z>0.0</z>
+    </axis>
+  </animation>
+
+<!-- Tyres, Hubs & Swing-arm -->
+<!-- Extend/Retract -->
+  <animation>
+	<type>rotate</type>
+	<object-name>UC_Nose_Tyres</object-name>
+	<object-name>UC_Nose_Hubs</object-name>
+	<object-name>UC_Nose_BSArm</object-name>
+    <property>gear/gear[0]/position-norm</property>
+    <interpolation>
+      <entry>
+        <ind>0.0</ind>
+        <dep>95.0</dep>
+      </entry>
+      <entry>
+        <ind>0.5</ind>
+        <dep>95.0</dep>
+      </entry>
+      <entry>
+        <ind>1.0</ind>
+        <dep>0.0</dep>
+      </entry>
+    </interpolation>
+    <center>
+      <x-m>7.87</x-m>
+      <y-m>0.0</y-m>
+      <z-m>0.07</z-m>
+    </center>
+    <axis>
+      <x>0.0</x>
+      <y>1.0</y>
+      <z>0.0</z>
+    </axis>
+  </animation>
+
+<!-- Steering -->
+  <animation>
+	<type>rotate</type>
+	<object-name>UC_Nose_Tyres</object-name>
+	<object-name>UC_Nose_Hubs</object-name>
+	<object-name>UC_Nose_BSArm</object-name>
+	<property>surface-positions/rudder-pos-norm</property>
+	<factor>53</factor>
+	<axis>
+		<x1-m>7.827</x1-m> <x2-m>7.722</x2-m>
+		<y1-m>0.0</y1-m> <y2-m>0.0</y2-m>
+		<z1-m>-0.422</z1-m> <z2-m>-1.451</z2-m>
+	</axis>
+  </animation>
+
+<!-- Compression -->
+  <animation>
+	<type>rotate</type>
+	<object-name>UC_Nose_Tyres</object-name>
+	<object-name>UC_Nose_Hubs</object-name>
+	<object-name>UC_Nose_BSArm</object-name>
+    <property>gear/gear[0]/compression-norm</property>
+    <interpolation>
+      <entry>
+        <ind>0.0</ind>
+        <dep>0.0</dep>
+      </entry>
+      <entry>
+        <ind>0.30</ind>
+        <dep>-10</dep>
+      </entry>
+      <entry>
+        <ind>0.50</ind>
+        <dep>-15</dep>
+      </entry>
+      <entry>
+        <ind>1.0</ind>
+        <dep>-30</dep>
+      </entry>
+      <entry>
+        <ind>2.5</ind>
+        <dep>-75</dep>
+      </entry>
+    </interpolation>
+    <center>
+      <x-m>7.547</x-m>
+      <y-m>0.0</y-m>
+      <z-m>-1.495</z-m>
     </center>
     <axis>
       <x>0.0</x>
@@ -1053,7 +1109,7 @@ livery_update.stop();
       </entry>
       <entry>
         <ind>0.5</ind>
-        <dep>-60</dep>
+        <dep>-81</dep>
       </entry>
       <entry>
         <ind>1.0</ind>
@@ -1102,11 +1158,11 @@ livery_update.stop();
     <interpolation>
       <entry>
         <ind>0.0</ind>
-        <dep>92.0</dep>
+        <dep>90.0</dep>
       </entry>
       <entry>
         <ind>0.5</ind>
-        <dep>92.0</dep>
+        <dep>90.0</dep>
       </entry>
       <entry>
         <ind>1.0</ind>
@@ -1114,9 +1170,9 @@ livery_update.stop();
       </entry>
     </interpolation>
     <center>
-      <x-m>13.37</x-m>
-      <y-m>-1.63</y-m>
-      <z-m>-0.06</z-m>
+      <x-m>13.79</x-m>
+      <y-m>-1.784</y-m>
+      <z-m>-0.0693</z-m>
     </center>
     <axis>
       <x>0.0</x>
@@ -1132,11 +1188,15 @@ livery_update.stop();
     <interpolation>
       <entry>
         <ind>0.0</ind>
-        <dep>3.0</dep>
+        <dep>5.0</dep>
       </entry>
       <entry>
         <ind>0.5</ind>
-        <dep>3.0</dep>
+        <dep>5.0</dep>
+      </entry>
+      <entry>
+        <ind>0.6</ind>
+        <dep>0.0</dep>
       </entry>
       <entry>
         <ind>1.0</ind>
@@ -1144,9 +1204,9 @@ livery_update.stop();
       </entry>
     </interpolation>
     <center>
-      <x-m>13.37</x-m>
-      <y-m>-1.63</y-m>
-      <z-m>-0.06</z-m>
+      <x-m>13.79</x-m>
+      <y-m>-1.784</y-m>
+      <z-m>-0.0693</z-m>
     </center>
     <axis>
       <x>1.0</x>
@@ -1178,9 +1238,9 @@ livery_update.stop();
       </entry>
     </interpolation>
     <center>
-      <x-m>13.37</x-m>
-      <y-m>-1.63</y-m>
-      <z-m>-0.06</z-m>
+      <x-m>13.79</x-m>
+      <y-m>-1.784</y-m>
+      <z-m>-0.0693</z-m>
     </center>
     <axis>
       <x>0.0</x>
@@ -1198,11 +1258,11 @@ livery_update.stop();
     <interpolation>
       <entry>
         <ind>0.0</ind>
-        <dep>92.0</dep>
+        <dep>90.0</dep>
       </entry>
       <entry>
         <ind>0.5</ind>
-        <dep>92.0</dep>
+        <dep>90.0</dep>
       </entry>
       <entry>
         <ind>1.0</ind>
@@ -1210,9 +1270,9 @@ livery_update.stop();
       </entry>
     </interpolation>
     <center>
-      <x-m>13.37</x-m>
-      <y-m>-1.63</y-m>
-      <z-m>-0.06</z-m>
+      <x-m>13.79</x-m>
+      <y-m>-1.784</y-m>
+      <z-m>-0.0693</z-m>
     </center>
     <axis>
       <x>0.0</x>
@@ -1228,11 +1288,15 @@ livery_update.stop();
     <interpolation>
       <entry>
         <ind>0.0</ind>
-        <dep>3.0</dep>
+        <dep>5.0</dep>
       </entry>
       <entry>
         <ind>0.5</ind>
-        <dep>3.0</dep>
+        <dep>5.0</dep>
+      </entry>
+      <entry>
+        <ind>0.6</ind>
+        <dep>0.0</dep>
       </entry>
       <entry>
         <ind>1.0</ind>
@@ -1240,9 +1304,9 @@ livery_update.stop();
       </entry>
     </interpolation>
     <center>
-      <x-m>13.37</x-m>
-      <y-m>-1.63</y-m>
-      <z-m>-0.06</z-m>
+      <x-m>13.79</x-m>
+      <y-m>-1.784</y-m>
+      <z-m>-0.0693</z-m>
     </center>
     <axis>
       <x>1.0</x>
@@ -1274,9 +1338,9 @@ livery_update.stop();
       </entry>
     </interpolation>
     <center>
-      <x-m>13.37</x-m>
-      <y-m>-1.63</y-m>
-      <z-m>-0.06</z-m>
+      <x-m>13.79</x-m>
+      <y-m>-1.784</y-m>
+      <z-m>-0.0693</z-m>
     </center>
     <axis>
       <x>0.0</x>
@@ -1290,7 +1354,16 @@ livery_update.stop();
 	<type>translate</type>
 	<object-name>UC_Main_Left_Hub</object-name>
     <property>gear/gear[1]/compression-norm</property>
-	<factor>0.8</factor>
+    <interpolation>
+      <entry>
+        <ind>0.0</ind>
+        <dep>0.0</dep>
+      </entry>
+      <entry>
+        <ind>2.5</ind>
+        <dep>0.8</dep>
+      </entry>
+    </interpolation>
     <axis>
       <x>0</x>
       <y>0</y>
@@ -1307,11 +1380,11 @@ livery_update.stop();
     <interpolation>
       <entry>
         <ind>0.0</ind>
-        <dep>92.0</dep>
+        <dep>90.0</dep>
       </entry>
       <entry>
         <ind>0.5</ind>
-        <dep>92.0</dep>
+        <dep>90.0</dep>
       </entry>
       <entry>
         <ind>1.0</ind>
@@ -1319,9 +1392,9 @@ livery_update.stop();
       </entry>
     </interpolation>
     <center>
-      <x-m>13.37</x-m>
-      <y-m>-1.63</y-m>
-      <z-m>-0.06</z-m>
+      <x-m>13.79</x-m>
+      <y-m>-1.784</y-m>
+      <z-m>-0.0693</z-m>
     </center>
     <axis>
       <x>0.0</x>
@@ -1337,11 +1410,15 @@ livery_update.stop();
     <interpolation>
       <entry>
         <ind>0.0</ind>
-        <dep>3.0</dep>
+        <dep>5.0</dep>
       </entry>
       <entry>
         <ind>0.5</ind>
-        <dep>3.0</dep>
+        <dep>5.0</dep>
+      </entry>
+      <entry>
+        <ind>0.6</ind>
+        <dep>0.0</dep>
       </entry>
       <entry>
         <ind>1.0</ind>
@@ -1349,9 +1426,9 @@ livery_update.stop();
       </entry>
     </interpolation>
     <center>
-      <x-m>13.37</x-m>
-      <y-m>-1.63</y-m>
-      <z-m>-0.06</z-m>
+      <x-m>13.79</x-m>
+      <y-m>-1.784</y-m>
+      <z-m>-0.0693</z-m>
     </center>
     <axis>
       <x>1.0</x>
@@ -1383,9 +1460,9 @@ livery_update.stop();
       </entry>
     </interpolation>
     <center>
-      <x-m>13.37</x-m>
-      <y-m>-1.63</y-m>
-      <z-m>-0.06</z-m>
+      <x-m>13.79</x-m>
+      <y-m>-1.784</y-m>
+      <z-m>-0.0693</z-m>
     </center>
     <axis>
       <x>0.0</x>
@@ -1399,7 +1476,16 @@ livery_update.stop();
 	<type>translate</type>
 	<object-name>UC_Main_Left_Tyre</object-name>
     <property>gear/gear[1]/compression-norm</property>
-	<factor>0.8</factor>
+    <interpolation>
+      <entry>
+        <ind>0.0</ind>
+        <dep>0.0</dep>
+      </entry>
+      <entry>
+        <ind>2.5</ind>
+        <dep>0.8</dep>
+      </entry>
+    </interpolation>
     <axis>
       <x>0</x>
       <y>0</y>
@@ -1416,11 +1502,11 @@ livery_update.stop();
     <interpolation>
       <entry>
         <ind>0.0</ind>
-        <dep>92.0</dep>
+        <dep>90.0</dep>
       </entry>
       <entry>
         <ind>0.5</ind>
-        <dep>92.0</dep>
+        <dep>90.0</dep>
       </entry>
       <entry>
         <ind>1.0</ind>
@@ -1428,9 +1514,9 @@ livery_update.stop();
       </entry>
     </interpolation>
     <center>
-      <x-m>13.37</x-m>
-      <y-m>-1.63</y-m>
-      <z-m>-0.06</z-m>
+      <x-m>13.79</x-m>
+      <y-m>-1.784</y-m>
+      <z-m>-0.0693</z-m>
     </center>
     <axis>
       <x>0.0</x>
@@ -1446,11 +1532,15 @@ livery_update.stop();
     <interpolation>
       <entry>
         <ind>0.0</ind>
-        <dep>4.5</dep>
+        <dep>7.5</dep>
       </entry>
       <entry>
         <ind>0.5</ind>
-        <dep>4.5</dep>
+        <dep>7.5</dep>
+      </entry>
+      <entry>
+        <ind>0.6</ind>
+        <dep>0.0</dep>
       </entry>
       <entry>
         <ind>1.0</ind>
@@ -1458,9 +1548,9 @@ livery_update.stop();
       </entry>
     </interpolation>
     <center>
-      <x-m>13.37</x-m>
-      <y-m>-1.63</y-m>
-      <z-m>-0.06</z-m>
+      <x-m>13.79</x-m>
+      <y-m>-1.784</y-m>
+      <z-m>-0.0693</z-m>
     </center>
     <axis>
       <x>1.0</x>
@@ -1492,9 +1582,9 @@ livery_update.stop();
       </entry>
     </interpolation>
     <center>
-      <x-m>13.37</x-m>
-      <y-m>-1.63</y-m>
-      <z-m>-0.06</z-m>
+      <x-m>13.79</x-m>
+      <y-m>-1.784</y-m>
+      <z-m>-0.0693</z-m>
     </center>
     <axis>
       <x>0.0</x>
@@ -1508,11 +1598,20 @@ livery_update.stop();
 	<type>rotate</type>
 	<object-name>UC_Main_Left_Upper_DA</object-name>
     <property>gear/gear[1]/compression-norm</property>
-    <factor>-90</factor>
+    <interpolation>
+      <entry>
+        <ind>0.0</ind>
+        <dep>0.0</dep>
+      </entry>
+      <entry>
+        <ind>2.5</ind>
+        <dep>-90.0</dep>
+      </entry>
+    </interpolation>
     <center>
-      <x-m>13.47</x-m>
-      <y-m>-1.63</y-m>
-      <z-m>-1.07</z-m>
+      <x-m>13.91</x-m>
+      <y-m>-1.963</y-m>
+      <z-m>-1.074</z-m>
     </center>
     <axis>
       <x>0.0</x>
@@ -1530,11 +1629,11 @@ livery_update.stop();
     <interpolation>
       <entry>
         <ind>0.0</ind>
-        <dep>92.0</dep>
+        <dep>90.0</dep>
       </entry>
       <entry>
         <ind>0.5</ind>
-        <dep>92.0</dep>
+        <dep>90.0</dep>
       </entry>
       <entry>
         <ind>1.0</ind>
@@ -1542,9 +1641,9 @@ livery_update.stop();
       </entry>
     </interpolation>
     <center>
-      <x-m>13.37</x-m>
-      <y-m>-1.63</y-m>
-      <z-m>-0.06</z-m>
+      <x-m>13.79</x-m>
+      <y-m>-1.784</y-m>
+      <z-m>-0.0693</z-m>
     </center>
     <axis>
       <x>0.0</x>
@@ -1560,11 +1659,15 @@ livery_update.stop();
     <interpolation>
       <entry>
         <ind>0.0</ind>
-        <dep>4.5</dep>
+        <dep>7.5</dep>
       </entry>
       <entry>
         <ind>0.5</ind>
-        <dep>4.5</dep>
+        <dep>7.5</dep>
+      </entry>
+      <entry>
+        <ind>0.6</ind>
+        <dep>0.0</dep>
       </entry>
       <entry>
         <ind>1.0</ind>
@@ -1572,9 +1675,9 @@ livery_update.stop();
       </entry>
     </interpolation>
     <center>
-      <x-m>13.37</x-m>
-      <y-m>-1.63</y-m>
-      <z-m>-0.06</z-m>
+      <x-m>13.79</x-m>
+      <y-m>-1.784</y-m>
+      <z-m>-0.0693</z-m>
     </center>
     <axis>
       <x>1.0</x>
@@ -1606,9 +1709,9 @@ livery_update.stop();
       </entry>
     </interpolation>
     <center>
-      <x-m>13.37</x-m>
-      <y-m>-1.63</y-m>
-      <z-m>-0.06</z-m>
+      <x-m>13.79</x-m>
+      <y-m>-1.784</y-m>
+      <z-m>-0.0693</z-m>
     </center>
     <axis>
       <x>0.0</x>
@@ -1619,19 +1722,23 @@ livery_update.stop();
 
 <!-- Compression -->
   <animation>
-	<type>rotate</type>
+	<type>translate</type>
 	<object-name>UC_Main_Left_Lower_DA</object-name>
     <property>gear/gear[1]/compression-norm</property>
-    <factor>-90</factor>
-    <center>
-      <x-m>13.47</x-m>
-      <y-m>-1.63</y-m>
-      <z-m>-1.07</z-m>
-    </center>
+    <interpolation>
+      <entry>
+        <ind>0.0</ind>
+        <dep>0.0</dep>
+      </entry>
+      <entry>
+        <ind>2.5</ind>
+        <dep>0.8</dep>
+      </entry>
+    </interpolation>
     <axis>
-      <x>0.0</x>
-      <y>1.0</y>
-      <z>0.0</z>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
     </axis>
   </animation>
 
@@ -1639,11 +1746,20 @@ livery_update.stop();
 	<type>rotate</type>
 	<object-name>UC_Main_Left_Lower_DA</object-name>
     <property>gear/gear[1]/compression-norm</property>
-    <factor>110</factor>
+    <interpolation>
+      <entry>
+        <ind>0.0</ind>
+        <dep>0.0</dep>
+      </entry>
+      <entry>
+        <ind>2.5</ind>
+        <dep>100.0</dep>
+      </entry>
+    </interpolation>
     <center>
-      <x-m>13.58</x-m>
-      <y-m>-1.63</y-m>
-      <z-m>-1.37</z-m>
+      <x-m>13.87</x-m>
+      <y-m>-1.855</y-m>
+      <z-m>-1.647</z-m>
     </center>
     <axis>
       <x>0.0</x>
@@ -1721,23 +1837,18 @@ livery_update.stop();
       </entry>
       <entry>
         <ind>0.5</ind>
-        <dep>-45.0</dep>
+        <dep>80.0</dep>
       </entry>
       <entry>
         <ind>1.0</ind>
-        <dep>-80.0</dep>
+        <dep>80.0</dep>
       </entry>
     </interpolation>
-    <center>
-      <x-m>0.8</x-m>
-      <y-m>-2.0</y-m>
-      <z-m>0.18</z-m>
-    </center>
-    <axis>
-      <x>1</x>
-      <y>0</y>
-      <z>0</z>
-    </axis>
+		<axis>
+			<x1-m>13.07</x1-m> <x2-m>11.34</x2-m>
+			<y1-m>-2.112</y1-m> <y2-m>-2.12</y2-m>
+			<z1-m>0.227</z1-m> <z2-m>0.306</z2-m>
+		</axis>
   </animation>
 
 
@@ -1752,23 +1863,18 @@ livery_update.stop();
       </entry>
       <entry>
         <ind>0.5</ind>
-        <dep>-45.0</dep>
+        <dep>-80.0</dep>
       </entry>
       <entry>
         <ind>1.0</ind>
         <dep>-80.0</dep>
       </entry>
     </interpolation>
-    <center>
-      <x-m>-0.3</x-m>
-      <y-m>2.0</y-m>
-      <z-m>0.18</z-m>
-    </center>
-    <axis>
-      <x>-1</x>
-      <y>0</y>
-      <z>0</z>
-    </axis>
+		<axis>
+			<x1-m>13.07</x1-m> <x2-m>11.34</x2-m>
+			<y1-m>2.112</y1-m> <y2-m>2.12</y2-m>
+			<z1-m>0.227</z1-m> <z2-m>0.306</z2-m>
+		</axis>
   </animation>
 
 
@@ -1802,11 +1908,11 @@ livery_update.stop();
     <interpolation>
       <entry>
         <ind>0.0</ind>
-        <dep>92.0</dep>
+        <dep>90.0</dep>
       </entry>
       <entry>
         <ind>0.5</ind>
-        <dep>92.0</dep>
+        <dep>90.0</dep>
       </entry>
       <entry>
         <ind>1.0</ind>
@@ -1814,9 +1920,9 @@ livery_update.stop();
       </entry>
     </interpolation>
     <center>
-      <x-m>13.37</x-m>
-      <y-m>1.63</y-m>
-      <z-m>-0.06</z-m>
+      <x-m>13.79</x-m>
+      <y-m>1.784</y-m>
+      <z-m>-0.0693</z-m>
     </center>
     <axis>
       <x>0.0</x>
@@ -1832,11 +1938,15 @@ livery_update.stop();
     <interpolation>
       <entry>
         <ind>0.0</ind>
-        <dep>-3.0</dep>
+        <dep>-5.0</dep>
       </entry>
       <entry>
         <ind>0.5</ind>
-        <dep>-3.0</dep>
+        <dep>-5.0</dep>
+      </entry>
+      <entry>
+        <ind>0.6</ind>
+        <dep>0.0</dep>
       </entry>
       <entry>
         <ind>1.0</ind>
@@ -1844,9 +1954,9 @@ livery_update.stop();
       </entry>
     </interpolation>
     <center>
-      <x-m>13.37</x-m>
-      <y-m>1.63</y-m>
-      <z-m>-0.06</z-m>
+      <x-m>13.79</x-m>
+      <y-m>1.784</y-m>
+      <z-m>-0.0693</z-m>
     </center>
     <axis>
       <x>1.0</x>
@@ -1862,11 +1972,11 @@ livery_update.stop();
     <interpolation>
       <entry>
         <ind>0.0</ind>
-        <dep>-90.0</dep>
+        <dep>90.0</dep>
       </entry>
       <entry>
         <ind>0.5</ind>
-        <dep>-90.0</dep>
+        <dep>90.0</dep>
       </entry>
       <entry>
         <ind>0.6</ind>
@@ -1878,9 +1988,9 @@ livery_update.stop();
       </entry>
     </interpolation>
     <center>
-      <x-m>13.37</x-m>
-      <y-m>1.63</y-m>
-      <z-m>-0.06</z-m>
+      <x-m>13.79</x-m>
+      <y-m>1.784</y-m>
+      <z-m>-0.0693</z-m>
     </center>
     <axis>
       <x>0.0</x>
@@ -1898,11 +2008,11 @@ livery_update.stop();
     <interpolation>
       <entry>
         <ind>0.0</ind>
-        <dep>92.0</dep>
+        <dep>90.0</dep>
       </entry>
       <entry>
         <ind>0.5</ind>
-        <dep>92.0</dep>
+        <dep>90.0</dep>
       </entry>
       <entry>
         <ind>1.0</ind>
@@ -1910,9 +2020,9 @@ livery_update.stop();
       </entry>
     </interpolation>
     <center>
-      <x-m>13.37</x-m>
-      <y-m>1.63</y-m>
-      <z-m>-0.06</z-m>
+      <x-m>13.79</x-m>
+      <y-m>1.784</y-m>
+      <z-m>-0.0693</z-m>
     </center>
     <axis>
       <x>0.0</x>
@@ -1928,11 +2038,15 @@ livery_update.stop();
     <interpolation>
       <entry>
         <ind>0.0</ind>
-        <dep>-3.0</dep>
+        <dep>-5.0</dep>
       </entry>
       <entry>
         <ind>0.5</ind>
-        <dep>-3.0</dep>
+        <dep>-5.0</dep>
+      </entry>
+      <entry>
+        <ind>0.6</ind>
+        <dep>0.0</dep>
       </entry>
       <entry>
         <ind>1.0</ind>
@@ -1940,9 +2054,9 @@ livery_update.stop();
       </entry>
     </interpolation>
     <center>
-      <x-m>13.37</x-m>
-      <y-m>1.63</y-m>
-      <z-m>-0.06</z-m>
+      <x-m>13.79</x-m>
+      <y-m>1.784</y-m>
+      <z-m>-0.0693</z-m>
     </center>
     <axis>
       <x>1.0</x>
@@ -1974,9 +2088,9 @@ livery_update.stop();
       </entry>
     </interpolation>
     <center>
-      <x-m>13.37</x-m>
-      <y-m>1.63</y-m>
-      <z-m>-0.06</z-m>
+      <x-m>13.79</x-m>
+      <y-m>1.784</y-m>
+      <z-m>-0.0693</z-m>
     </center>
     <axis>
       <x>0.0</x>
@@ -1990,7 +2104,16 @@ livery_update.stop();
 	<type>translate</type>
 	<object-name>UC_Main_Right_Hub</object-name>
     <property>gear/gear[2]/compression-norm</property>
-	<factor>0.8</factor>
+    <interpolation>
+      <entry>
+        <ind>0.0</ind>
+        <dep>0.0</dep>
+      </entry>
+      <entry>
+        <ind>2.5</ind>
+        <dep>0.8</dep>
+      </entry>
+    </interpolation>
     <axis>
       <x>0</x>
       <y>0</y>
@@ -2008,11 +2131,11 @@ livery_update.stop();
     <interpolation>
       <entry>
         <ind>0.0</ind>
-        <dep>92.0</dep>
+        <dep>90.0</dep>
       </entry>
       <entry>
         <ind>0.5</ind>
-        <dep>92.0</dep>
+        <dep>90.0</dep>
       </entry>
       <entry>
         <ind>1.0</ind>
@@ -2020,9 +2143,9 @@ livery_update.stop();
       </entry>
     </interpolation>
     <center>
-      <x-m>13.37</x-m>
-      <y-m>1.63</y-m>
-      <z-m>-0.06</z-m>
+      <x-m>13.79</x-m>
+      <y-m>1.784</y-m>
+      <z-m>-0.0693</z-m>
     </center>
     <axis>
       <x>0.0</x>
@@ -2038,11 +2161,15 @@ livery_update.stop();
     <interpolation>
       <entry>
         <ind>0.0</ind>
-        <dep>-3.0</dep>
+        <dep>-5.0</dep>
       </entry>
       <entry>
         <ind>0.5</ind>
-        <dep>-3.0</dep>
+        <dep>-5.0</dep>
+      </entry>
+      <entry>
+        <ind>0.6</ind>
+        <dep>0.0</dep>
       </entry>
       <entry>
         <ind>1.0</ind>
@@ -2050,9 +2177,9 @@ livery_update.stop();
       </entry>
     </interpolation>
     <center>
-      <x-m>13.37</x-m>
-      <y-m>1.63</y-m>
-      <z-m>-0.06</z-m>
+      <x-m>13.79</x-m>
+      <y-m>1.784</y-m>
+      <z-m>-0.0693</z-m>
     </center>
     <axis>
       <x>1.0</x>
@@ -2084,9 +2211,9 @@ livery_update.stop();
       </entry>
     </interpolation>
     <center>
-      <x-m>13.37</x-m>
-      <y-m>1.63</y-m>
-      <z-m>-0.06</z-m>
+      <x-m>13.79</x-m>
+      <y-m>1.784</y-m>
+      <z-m>-0.0693</z-m>
     </center>
     <axis>
       <x>0.0</x>
@@ -2100,7 +2227,16 @@ livery_update.stop();
 	<type>translate</type>
 	<object-name>UC_Main_Right_Tyre</object-name>
     <property>gear/gear[2]/compression-norm</property>
-	<factor>0.8</factor>
+    <interpolation>
+      <entry>
+        <ind>0.0</ind>
+        <dep>0.0</dep>
+      </entry>
+      <entry>
+        <ind>2.5</ind>
+        <dep>0.8</dep>
+      </entry>
+    </interpolation>
     <axis>
       <x>0</x>
       <y>0</y>
@@ -2117,11 +2253,11 @@ livery_update.stop();
     <interpolation>
       <entry>
         <ind>0.0</ind>
-        <dep>92.0</dep>
+        <dep>90.0</dep>
       </entry>
       <entry>
         <ind>0.5</ind>
-        <dep>92.0</dep>
+        <dep>90.0</dep>
       </entry>
       <entry>
         <ind>1.0</ind>
@@ -2129,9 +2265,9 @@ livery_update.stop();
       </entry>
     </interpolation>
     <center>
-      <x-m>13.37</x-m>
-      <y-m>1.63</y-m>
-      <z-m>-0.06</z-m>
+      <x-m>13.79</x-m>
+      <y-m>1.784</y-m>
+      <z-m>-0.0693</z-m>
     </center>
     <axis>
       <x>0.0</x>
@@ -2147,11 +2283,15 @@ livery_update.stop();
     <interpolation>
       <entry>
         <ind>0.0</ind>
-        <dep>4.5</dep>
+        <dep>-7.5</dep>
       </entry>
       <entry>
         <ind>0.5</ind>
-        <dep>4.5</dep>
+        <dep>-7.5</dep>
+      </entry>
+      <entry>
+        <ind>0.6</ind>
+        <dep>0.0</dep>
       </entry>
       <entry>
         <ind>1.0</ind>
@@ -2159,9 +2299,9 @@ livery_update.stop();
       </entry>
     </interpolation>
     <center>
-      <x-m>13.37</x-m>
-      <y-m>1.63</y-m>
-      <z-m>-0.06</z-m>
+      <x-m>13.79</x-m>
+      <y-m>1.784</y-m>
+      <z-m>-0.0693</z-m>
     </center>
     <axis>
       <x>1.0</x>
@@ -2177,11 +2317,11 @@ livery_update.stop();
     <interpolation>
       <entry>
         <ind>0.0</ind>
-        <dep>-90.0</dep>
+        <dep>90.0</dep>
       </entry>
       <entry>
         <ind>0.5</ind>
-        <dep>-90.0</dep>
+        <dep>90.0</dep>
       </entry>
       <entry>
         <ind>0.6</ind>
@@ -2193,9 +2333,9 @@ livery_update.stop();
       </entry>
     </interpolation>
     <center>
-      <x-m>13.37</x-m>
-      <y-m>1.63</y-m>
-      <z-m>-0.06</z-m>
+      <x-m>13.79</x-m>
+      <y-m>1.784</y-m>
+      <z-m>-0.0693</z-m>
     </center>
     <axis>
       <x>0.0</x>
@@ -2209,11 +2349,20 @@ livery_update.stop();
 	<type>rotate</type>
 	<object-name>UC_Main_Right_Upper_D</object-name>
     <property>gear/gear[2]/compression-norm</property>
-    <factor>-90</factor>
+    <interpolation>
+      <entry>
+        <ind>0.0</ind>
+        <dep>0.0</dep>
+      </entry>
+      <entry>
+        <ind>2.5</ind>
+        <dep>-90.0</dep>
+      </entry>
+    </interpolation>
     <center>
-      <x-m>13.47</x-m>
-      <y-m>1.63</y-m>
-      <z-m>-1.07</z-m>
+      <x-m>13.91</x-m>
+      <y-m>1.963</y-m>
+      <z-m>-1.074</z-m>
     </center>
     <axis>
       <x>0.0</x>
@@ -2231,11 +2380,11 @@ livery_update.stop();
     <interpolation>
       <entry>
         <ind>0.0</ind>
-        <dep>92.0</dep>
+        <dep>90.0</dep>
       </entry>
       <entry>
         <ind>0.5</ind>
-        <dep>92.0</dep>
+        <dep>90.0</dep>
       </entry>
       <entry>
         <ind>1.0</ind>
@@ -2243,9 +2392,9 @@ livery_update.stop();
       </entry>
     </interpolation>
     <center>
-      <x-m>13.37</x-m>
-      <y-m>1.63</y-m>
-      <z-m>-0.06</z-m>
+      <x-m>13.79</x-m>
+      <y-m>1.784</y-m>
+      <z-m>-0.0693</z-m>
     </center>
     <axis>
       <x>0.0</x>
@@ -2261,11 +2410,15 @@ livery_update.stop();
     <interpolation>
       <entry>
         <ind>0.0</ind>
-        <dep>4.5</dep>
+        <dep>-7.5</dep>
       </entry>
       <entry>
         <ind>0.5</ind>
-        <dep>4.5</dep>
+        <dep>-7.5</dep>
+      </entry>
+      <entry>
+        <ind>0.6</ind>
+        <dep>0.0</dep>
       </entry>
       <entry>
         <ind>1.0</ind>
@@ -2273,9 +2426,9 @@ livery_update.stop();
       </entry>
     </interpolation>
     <center>
-      <x-m>13.37</x-m>
-      <y-m>1.63</y-m>
-      <z-m>-0.06</z-m>
+      <x-m>13.79</x-m>
+      <y-m>1.784</y-m>
+      <z-m>-0.0693</z-m>
     </center>
     <axis>
       <x>1.0</x>
@@ -2291,11 +2444,11 @@ livery_update.stop();
     <interpolation>
       <entry>
         <ind>0.0</ind>
-        <dep>-90.0</dep>
+        <dep>90.0</dep>
       </entry>
       <entry>
         <ind>0.5</ind>
-        <dep>-90.0</dep>
+        <dep>90.0</dep>
       </entry>
       <entry>
         <ind>0.6</ind>
@@ -2307,9 +2460,9 @@ livery_update.stop();
       </entry>
     </interpolation>
     <center>
-      <x-m>13.37</x-m>
-      <y-m>1.63</y-m>
-      <z-m>-0.06</z-m>
+      <x-m>13.79</x-m>
+      <y-m>1.784</y-m>
+      <z-m>-0.0693</z-m>
     </center>
     <axis>
       <x>0.0</x>
@@ -2320,19 +2473,23 @@ livery_update.stop();
 
 <!-- Compression -->
   <animation>
-	<type>rotate</type>
+	<type>translate</type>
 	<object-name>UC_Main_Right_Lower_D</object-name>
     <property>gear/gear[2]/compression-norm</property>
-    <factor>-90</factor>
-    <center>
-      <x-m>13.47</x-m>
-      <y-m>1.63</y-m>
-      <z-m>-1.07</z-m>
-    </center>
+    <interpolation>
+      <entry>
+        <ind>0.0</ind>
+        <dep>0.0</dep>
+      </entry>
+      <entry>
+        <ind>2.5</ind>
+        <dep>0.8</dep>
+      </entry>
+    </interpolation>
     <axis>
-      <x>0.0</x>
-      <y>1.0</y>
-      <z>0.0</z>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
     </axis>
   </animation>
 
@@ -2340,11 +2497,20 @@ livery_update.stop();
 	<type>rotate</type>
 	<object-name>UC_Main_Right_Lower_D</object-name>
     <property>gear/gear[2]/compression-norm</property>
-    <factor>110</factor>
+    <interpolation>
+      <entry>
+        <ind>0.0</ind>
+        <dep>0.0</dep>
+      </entry>
+      <entry>
+        <ind>2.5</ind>
+        <dep>100.0</dep>
+      </entry>
+    </interpolation>
     <center>
-      <x-m>13.58</x-m>
-      <y-m>1.63</y-m>
-      <z-m>-1.37</z-m>
+      <x-m>13.87</x-m>
+      <y-m>1.855</y-m>
+      <z-m>-1.647</z-m>
     </center>
     <axis>
       <x>0.0</x>
@@ -2352,7 +2518,7 @@ livery_update.stop();
       <z>0.0</z>
     </axis>
   </animation>
-
+  
  <!-- Nozzles -->
   
   <model>
@@ -2865,8 +3031,8 @@ livery_update.stop();
   <path>Aircraft/SU-27SK/Models/sim-helpr-models/generic-trailer-GPU.xml</path>
   <offsets>
    <x-m> 0.0</x-m>
-   <y-m> 0.0 </y-m>
-   <z-m> 0.0 </z-m>
+   <y-m> 0.2 </y-m>
+   <z-m> 0.2 </z-m>
   </offsets>
  </model>
 
