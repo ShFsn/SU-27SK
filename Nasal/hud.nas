@@ -10,6 +10,15 @@ var Kts2KmH = func(x){if(x!= nil){return x * 1.85283} else {return 0} };
 var KmH2Kts = func(x){return x * 0.53995};
 var ft2m = func(x){if(x!= nil){return x * 0.3048}else {return 0}};
 var m2ft = func(x){return x * 3.2808};
+
+var x_offset = props.globals.getNode("sim/current-view/x-offset-m", 1);
+var y_offset = props.globals.getNode("sim/current-view/y-offset-m", 1);
+var z_offset = props.globals.getNode("sim/current-view/z-offset-m", 1);
+var asp_ratio = 1/math.cos(25 * math.pi/180);
+var hud_scale = 0.0;
+var hud_horiz = 0.0;
+var hud_vert = 0.0;
+
 var HUD = {
   canvas_settings: {
     "name": "HUD",
@@ -29,7 +38,7 @@ var HUD = {
  
     m.root =
       m.canvas.createGroup()
-              .setScale(1, 1/math.cos(25 * math.pi/180))
+              .setScale(1, asp_ratio)
               .setTranslation(0, 0)
               .set("font", "lucida.txf")
               .setDouble("character-size", 18)
@@ -416,6 +425,18 @@ var HUD = {
  
     settimer(func me.update(), 0);
   },
+
+  	update_pos : func() {
+    settimer(func me.update_pos(), 0);
+    hud_scale = 1+(z_offset.getValue()-5.23)/(0.69);
+    hud_horiz = 256/0.17*x_offset.getValue()+128*(1-hud_scale);
+    hud_vert = 256/0.22*(1.42 - y_offset.getValue())+107.5*(1-hud_scale);
+  	me.root.setTranslation(hud_horiz,hud_vert);
+  	me.svg.setTranslation(hud_horiz,hud_vert);
+  	me.root.setScale(hud_scale,asp_ratio*hud_scale);
+  	me.svg.setScale(hud_scale,asp_ratio*hud_scale);
+  		},
+
 		# Get an element from the SVG; handle errors; and apply clip rectangle
 		# if found (by naming convention : addition of _clip to object name).
      get_element : func(id) {
@@ -454,4 +475,5 @@ var init = setlistener("/sim/signals/fdm-initialized", func() {
   removelistener(init); # only call once
   var hud_pilot = HUD.new({"node": "hudglass"});
   hud_pilot.update();
+  hud_pilot.update_pos();
 });
