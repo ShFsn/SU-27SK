@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PropertyList>
+    <name>Su-27_Mirrors</name>
+	<inherits-from>Effects/model-combined-deferred</inherits-from>
+	<parameters>
+		<reflection-enabled type="int">1</reflection-enabled>
+	    <reflection-dynamic type="int">1</reflection-dynamic>
+	    <reflect_map-enabled type="int">0</reflect_map-enabled>
+	    <reflection-correction type="float">1.0</reflection-correction>
+	    <reflection-rainbow type="float">0.05</reflection-rainbow>
+	    <reflection-fresnel type="float">0.1</reflection-fresnel>
+		<texture n="5">
+	        <type>cubemap</type>
+	        <images>
+	            <positive-x>Aircraft/Generic/Effects/CubeMaps/fair-sky/fair-sky_px.png</positive-x>
+	            <negative-x>Aircraft/Generic/Effects/CubeMaps/fair-sky/fair-sky_nx.png</negative-x>
+	            <positive-y>Aircraft/Generic/Effects/CubeMaps/fair-sky/fair-sky_py.png</positive-y>
+	            <negative-y>Aircraft/Generic/Effects/CubeMaps/fair-sky/fair-sky_ny.png</negative-y>
+	            <positive-z>Aircraft/Generic/Effects/CubeMaps/fair-sky/fair-sky_pz.png</positive-z>
+	            <negative-z>Aircraft/Generic/Effects/CubeMaps/fair-sky/fair-sky_nz.png</negative-z>
+	        </images>
+	    </texture>
+	</parameters>
+</PropertyList>

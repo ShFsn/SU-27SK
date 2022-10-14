@@ -21,13 +21,66 @@
   <object-name>canopy.glass</object-name>
   <object-name>object.001</object-name>
   
+</effect> 
+
+<!-- Cockpit Mirrors reflections-->
+<effect>
+  <inherits-from>Effects/mirrors</inherits-from>
+
+  <object-name>MirrorC.M</object-name>
+  <object-name>MirrorL.M</object-name>
+  <object-name>MirrorR.M</object-name>
+  
 </effect>
+
+<animation>
+  <type>material</type>
+  <object-name>MirrorC.M</object-name>
+  <object-name>MirrorL.M</object-name>
+  <object-name>MirrorR.M</object-name>
+  <condition>
+    <and>
+      <property>/sim/rendering/shaders/skydome</property>
+      <greater-than>
+        <property>/sim/rendering/shaders/model</property>
+        <value>0</value>
+      </greater-than>
+    </and>
+  </condition>
+  <ambient>
+    <red>1.0</red>
+    <green>1.0</green>
+    <blue>1.0</blue>
+  </ambient>
+  <diffuse>
+    <red>1.0</red>
+    <green>1.0</green>
+    <blue>1.0</blue>
+  </diffuse>
+  <emission>
+    <red>1.0</red>
+    <green>1.0</green>
+    <blue>1.0</blue>
+  </emission>
+  <specular>
+    <red>1.0</red>
+    <green>1.0</green>
+    <blue>1.0</blue>
+  </specular>
+</animation>
+
+<!--<animation>
+  <type>noshadow</type>
+  <object-name>canopy.glass</object-name>
+  <object-name>object.001</object-name>
+ </animation>-->
   
   <!-- canopy animation -->
  
  <animation>
     <type>rotate</type>
 			<object-name>canopy.glass</object-name>
+      <object-name>Mirrors</object-name>
 	  <property>canopy/position-norm</property>
     <interpolation>
       <entry><ind> 0 </ind><dep>  0 </dep></entry>
