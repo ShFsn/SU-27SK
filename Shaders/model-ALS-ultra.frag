@@ -225,11 +225,14 @@ void main (void)
     vec4 light_diffuse;
     vec4 light_ambient;
     float intensity;
+    float light_diffuse_raw_length;
 
     light_diffuse.b = light_func(lightArg, 1.330e-05, 0.264, 3.827, 1.08e-05, 1.0);
     light_diffuse.g = light_func(lightArg, 3.931e-06, 0.264, 3.827, 7.93e-06, 1.0);
     light_diffuse.r = light_func(lightArg, 8.305e-06, 0.161, 3.827, 3.04e-05, 1.0);
     light_diffuse.a = 1.0;
+    // Save the length for "reflect"
+    light_diffuse_raw_length = length(light_diffuse.rgb);
     light_diffuse = light_diffuse * vertex_scattering;
 
     light_ambient.r = light_func(lightArg, 0.236, 0.253, 1.073, 0.572, 0.33);
@@ -429,22 +432,14 @@ void main (void)
             //vec4 reflcolor = reflection;
             vec4 reflfrescolor = mix(reflcolor, fresnel, refl_fresnel  * v);
             vec4 noisecolor = mix(reflfrescolor, noisevec, refl_noise);
-            //vec4 raincolor = vec4(noisecolor.rgb * reflFactor, 1.0);
-	    vec4 raincolor = vec4(noisecolor.rgb, 1.0);
-            raincolor += Specular;
-            vec4 light_dyn_refl;
-            light_dyn_refl.b = light_func(lightArg, 1.330e-05, 0.264, 3.827, 1.08e-05, 1.0);
-            light_dyn_refl.g = light_func(lightArg, 3.931e-06, 0.264, 3.827, 7.93e-06, 1.0);
-            light_dyn_refl.r = light_func(lightArg, 8.305e-06, 0.161, 3.827, 3.04e-05, 1.0);
-            light_dyn_refl.a = 1.0;
-            if (refl_type == 1)
-                {raincolor *= light_ambient / length(light_ambient.rgb) * length(light_dyn_refl.rbg);}
-            else if(refl_type == 2) 
-                {raincolor *= light_diffuse;}
 
-	    if (refl_type == 1)
-            	{mixedcolor = mix(texel, raincolor, reflFactor * refl_d).rgb;}
-	    else if (refl_type == 2)
+	    if (refl_type == 1){
+                //vec4 raincolor = vec4(noisecolor.rgb * reflFactor, 1.0);
+	        vec4 raincolor = vec4(noisecolor.rgb, 1.0);
+                raincolor += Specular;
+                raincolor *= light_ambient / length(light_ambient.rgb) * light_diffuse_raw_length;
+            	mixedcolor = mix(texel, raincolor, reflFactor * refl_d).rgb;
+            } else if (refl_type == 2)
 		{mixedcolor = ((texel +(reflcolor * reflFactor * refl_d))-(0.5*reflFactor * refl_d)).rgb;}
 
         } else {
