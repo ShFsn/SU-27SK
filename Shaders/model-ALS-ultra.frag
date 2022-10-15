@@ -79,9 +79,6 @@ uniform float air_pollution;
 uniform float snowlevel;
 uniform float snow_thickness_factor;
 
-uniform int quality_level;
-uniform int tquality_level;
-
 uniform float osg_SimulationTime;
 uniform mat4 osg_ViewMatrix;
 
@@ -121,9 +118,6 @@ vec3 landing_light(in float offset, in float offsetv);
 vec3 filter_combined (in vec3 color) ;
 vec3 moonlight_perception (in vec3 light) ;
 vec3 addLights(in vec3 color1, in vec3 color2);
-
-float getShadowing();
-vec3 getClusteredLightsContribution(vec3 p, vec3 n, vec3 texel);
 
 
 float light_func (in float x, in float a, in float b, in float c, in float d, in float e)
@@ -225,11 +219,14 @@ void main (void)
     vec4 light_diffuse;
     vec4 light_ambient;
     float intensity;
+    float light_diffuse_raw_length;
 
     light_diffuse.b = light_func(lightArg, 1.330e-05, 0.264, 3.827, 1.08e-05, 1.0);
     light_diffuse.g = light_func(lightArg, 3.931e-06, 0.264, 3.827, 7.93e-06, 1.0);
     light_diffuse.r = light_func(lightArg, 8.305e-06, 0.161, 3.827, 3.04e-05, 1.0);
     light_diffuse.a = 1.0;
+    // Save the length for "reflect"
+    light_diffuse_raw_length = length(light_diffuse.rgb);
     light_diffuse = light_diffuse * vertex_scattering;
 
     light_ambient.r = light_func(lightArg, 0.236, 0.253, 1.073, 0.572, 0.33);
@@ -345,8 +342,7 @@ void main (void)
     else
         {pf1 = pow(nDotHV1, 0.5*gl_FrontMaterial.shininess);}
   
-   float shadowmap = getShadowing();
-   light_diffuse *= (0.3+0.7*shadowmap);
+
 
     if (cloud_shadow_flag == 1) 
 	{
@@ -394,7 +390,6 @@ void main (void)
     Specular+=  gl_FrontMaterial.specular * pow(max(0.0,-dot(N,normalize(vertVec))),gl_FrontMaterial.shininess) * vec4(secondary_light,1.0);
 
     Specular *= refl_d;
-    Specular *= shadowmap;
 
     vec4 color = gl_Color + Diffuse * gl_FrontMaterial.diffuse;
     color = clamp( color, 0.0, 1.0 );
@@ -429,22 +424,14 @@ void main (void)
             //vec4 reflcolor = reflection;
             vec4 reflfrescolor = mix(reflcolor, fresnel, refl_fresnel  * v);
             vec4 noisecolor = mix(reflfrescolor, noisevec, refl_noise);
+
+	    if (refl_type == 1){
             //vec4 raincolor = vec4(noisecolor.rgb * reflFactor, 1.0);
 	    vec4 raincolor = vec4(noisecolor.rgb, 1.0);
             raincolor += Specular;
-            vec4 light_dyn_refl;
-            light_dyn_refl.b = light_func(lightArg, 1.330e-05, 0.264, 3.827, 1.08e-05, 1.0);
-            light_dyn_refl.g = light_func(lightArg, 3.931e-06, 0.264, 3.827, 7.93e-06, 1.0);
-            light_dyn_refl.r = light_func(lightArg, 8.305e-06, 0.161, 3.827, 3.04e-05, 1.0);
-            light_dyn_refl.a = 1.0;
-            if (refl_type == 1)
-                {raincolor *= light_ambient / length(light_ambient.rgb) * length(light_dyn_refl.rbg);}
-            else if(refl_type == 2) 
-                {raincolor *= light_diffuse;}
-
-	    if (refl_type == 1)
-            	{mixedcolor = mix(texel, raincolor, reflFactor * refl_d).rgb;}
-	    else if (refl_type == 2)
+                raincolor *= light_ambient / length(light_ambient.rgb) * light_diffuse_raw_length;
+            	mixedcolor = mix(texel, raincolor, reflFactor * refl_d).rgb;
+            } else if (refl_type == 2)
 		{mixedcolor = ((texel +(reflcolor * reflFactor * refl_d))-(0.5*reflFactor * refl_d)).rgb;}
 
         } else {
@@ -516,8 +503,6 @@ void main (void)
     vec4 fragColor = vec4(color.rgb * mixedcolor + ambient_Correction.rgb, color.a);
 
     fragColor += Specular * nmap.a;
-
-    fragColor.rgb += getClusteredLightsContribution(vertVec, N, texel.rgb);
 
     //////////////////////////////////////////////////////////////////////
     // BEGIN lightmap
@@ -671,9 +656,7 @@ void main (void)
     	//hazeColor = clamp(hazeColor, 0.0, 1.0);
 
     ///BEGIN Rayleigh fog ///
-    // Only compute fog if terrain level is 'Ultra'
-    if ((quality_level > 5) && (tquality_level > 5))
-    {
+
     	// Rayleigh color shift due to out-scattering
     	float rayleigh_length = 0.5 * avisibility * (2.5 - 1.9 * air_pollution)/alt_factor(eye_alt, eye_alt+relPos.z);
     	float outscatter = 1.0-exp(-dist/rayleigh_length);
@@ -682,7 +665,7 @@ void main (void)
 	vec3 rayleighColor = vec3 (0.17, 0.52, 0.87) * lightIntensity;
    	float rayleighStrength = rayleigh_in_func(dist, air_pollution, avisibility/max(lightIntensity,0.05), eye_alt, eye_alt + relPos.z);
   	fragColor.rgb = mix(fragColor.rgb, rayleighColor,rayleighStrength);
-    }
+
     /// END Rayleigh fog
 
     // don't let the light fade out too rapidly
