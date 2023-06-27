@@ -3,11 +3,7 @@
 ************************************************************************
 SU-27 simulation config.
 
-<<<<<<< HEAD
-2006-06-04 Lee Elliott edited by Yanes
-=======
 2006-06-04 Lee Elliott , Yanes Bechir April 2016-2020.
->>>>>>> 7a1440f1161bb0918492d1db15f4cf6e1375e5ef
 ************************************************************************
 -->
 
@@ -238,18 +234,17 @@ USSR and Russia  aerospace industry .
     <startup>
    <splash-texture>Aircraft/SU-27SK/Su-27Splach-pic.png</splash-texture>
   </startup>
-  
-
-
-<hud>
-
-</hud>
 
 
     <systems>
         <autopilot>
             <path>Aircraft/SU-27SK/Systems/autopilot5.xml</path>
         </autopilot>
+
+        <property-rule n="100">
+          <name>hud</name>
+          <path>Aircraft/SU-27SK/Systems/HUD.xml</path>
+        </property-rule>
     
         <electrical>
             <!-- note :

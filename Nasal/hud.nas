@@ -431,8 +431,8 @@ var HUD = {
     hud_scale = 1+(z_offset.getValue()-5.23)/(0.69);
     hud_horiz = 256/0.17*x_offset.getValue()+128*(1-hud_scale);
     hud_vert = 256/0.22*(1.42 - y_offset.getValue())+107.5*(1-hud_scale);
-  	me.root.setTranslation(hud_horiz,hud_vert);
-  	me.svg.setTranslation(hud_horiz,hud_vert);
+  	#me.root.setTranslation(hud_horiz,hud_vert);
+  	#me.svg.setTranslation(hud_horiz,hud_vert);
   	me.root.setScale(hud_scale,asp_ratio*hud_scale);
   	me.svg.setScale(hud_scale,asp_ratio*hud_scale);
   		},

@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+ 
+
+<PropertyList>
+
+  
+  <filter>
+    <name>hud-x</name>
+    <debug>false</debug>
+    <type>gain</type>
+    <gain>1.0</gain>
+    <input>
+      <expression>
+        <sum>
+          <product>
+            <value>5.88235</value>
+            <property>sim/current-view/x-offset-m</property>
+          </product>
+          <product>
+            <value>-0.5</value>
+            <product>
+              <sum>
+                <property>sim/current-view/z-offset-m</property>
+                <value>-5.23</value>
+              </sum>
+              <value>1.45</value>
+            </product>
+          </product>
+        </sum>
+      </expression>
+    </input>
+    <output>
+      <property>su-27/instrumentation/HUD/x-offset</property>
+    </output>
+  </filter>
+
+  
+  <filter>
+    <name>hud-x</name>
+    <debug>false</debug>
+    <type>gain</type>
+    <gain>1.0</gain>
+    <input>
+      <expression>
+        <sum>
+          <product>
+            <value>-4.54545</value>
+            <sum>
+              <property>sim/current-view/y-offset-m</property>
+              <value>-1.42</value>
+            </sum>
+          </product>
+          <product>
+            <value>-0.42</value>
+            <product>
+              <sum>
+                <property>sim/current-view/z-offset-m</property>
+                <value>-5.23</value>
+              </sum>
+              <value>1.45</value>
+            </product>
+          </product>
+        </sum>
+      </expression>
+    </input>
+    <output>
+      <property>su-27/instrumentation/HUD/y-offset</property>
+    </output>
+  </filter>
+
+
+</PropertyList>
