@@ -11,18 +11,53 @@ SU-27 simulation config.
     <sim>
       <flight-model>jsb</flight-model>
       <status>Beta</status>
-      <author>Yanes Bechir,FGUK team</author>
       <aero>Su-27SK</aero>
       <fuel-fraction>0.5</fuel-fraction>
 
-      <description>Sukoi SU-27SK (JSBsim FDM)</description>
-      <long-description>
-      This is a 4th generation fighter aircraft was built and planned initially to work in the Soviet Air Force as an air superiority fighter ,
-the SK variant of the fighter made first in the USSR and then in Russia and still in service in Russian and  many air forces in the world , NATO reporting name : Flanker B.
+      <description>Sukhoi SU-27SK (JSBsim FDM)</description>
+      <long-description>This is a 4th generation fighter aircraft was built and planned initially to work in the Soviet Air Force as an air superiority fighter,
+the SK variant of the fighter made first in the USSR and then in Russia and still in service in Russian and many air forces in the world, NATO reporting name: Flanker B.
 This aircraft have a stunning flight capabilities in combat maneuvers or in aerobatic shows ,
-it was especially known by its amazing aerodynamics . It’s also obvious that it was an icon in the 
-USSR and Russia  aerospace industry .
-      </long-description>
+it was especially known by its amazing aerodynamics. It's also obvious that it was an icon in the 
+USSR and Russia aerospace industry.</long-description>
+      <authors>
+        <author n='0'>
+          <name>Yanes Bechir</name>
+        </author>
+        <author n='1'>
+          <name>FGUK team</name>
+        </author>
+      </authors>
+      <urls>
+        <home-page>https://github.com/ShFsn/SU-27SK</home-page>
+        <support>https://github.com/ShFsn/SU-27SK/issues</support>
+        <wikipedia>https://en.wikipedia.org/wiki/Sukhoi_Su-27</wikipedia>
+        <code-repository>https://github.com/ShFsn/SU-27SK</code-repository>
+      </urls>      
+
+      <localized>
+        <ru>
+          <description>Сухой Су-27СК (JSBsim FDM)</description>
+          <long-description>Истребитель 4-го поколения. Был построен и планировался для использования как истребитель завоевания господства в воздухе.
+Вариант СК впервые построен в СССР и затем в России и до сих пор используется в Российских и многих других воздушных силах по всему миру. Обозначение НАТО: Фланкер Б.
+Самолёт имеет впечатляющие лётные возможности в боевых манёврах или на авиашоу, он особенно известен своей превосходной аэродинамикой.
+Он также был иконой авиакосмической индустрии СССР и России.</long-description>
+          <authors>
+            <author n='0'>
+              <name>Yanes Bechir</name>
+            </author>
+            <author n='1'>
+              <name>команда FGUK</name>
+            </author>
+          </authors>
+          <urls>
+            <home-page>https://github.com/ShFsn/SU-27SK</home-page>
+            <support>https://github.com/ShFsn/SU-27SK/issues</support>
+            <wikipedia>https://ru.wikipedia.org/wiki/Су-27</wikipedia>
+            <code-repository>https://github.com/ShFsn/SU-27SK</code-repository>
+          </urls>  
+        </ru>
+      </localized>
       
     <rating>
       <FDM type="int">     4 </FDM>
