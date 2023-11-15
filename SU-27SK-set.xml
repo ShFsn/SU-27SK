@@ -11,7 +11,7 @@ SU-27 simulation config.
     <sim>
       <flight-model>jsb</flight-model>
       <status>Beta</status>
-      <aero>Su-27SK</aero>
+      <aero>SU-27SK</aero>
       <fuel-fraction>0.5</fuel-fraction>
 
       <description>Sukhoi SU-27SK (JSBsim FDM)</description>
